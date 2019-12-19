@@ -1,0 +1,154 @@
+{
+    "name": "Getty Images",
+    "description": "Find high resolution royalty-free images, editorial stock photos, vector art, video footage clips and stock music licensing at the richest image search photo library online.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1013-getty-images.jpg",
+    "tags": [
+        "api provider",
+        "general data",
+        "getting started example",
+        "have api",
+        "have swagger",
+        "images",
+        "marketplaces",
+        "photos",
+        "relative data",
+        "service api",
+        "stocks",
+        "videos"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/getty-images\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Getty Images",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1013-getty-images.jpg",
+            "humanURL": "http:\/\/gettyimages.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/getty-images.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/getty-images-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/getty-images-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Authentication",
+            "url": "https:\/\/github.com\/gettyimages\/connect#authentication"
+        },
+        {
+            "type": "Base",
+            "url": "https:\/\/connect.gettyimages.com\/"
+        },
+        {
+            "type": ".NET SDK",
+            "url": "https:\/\/github.com\/gettyimages\/connect_sdk_csharp"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/gettyimages"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "http:\/\/www.crunchbase.com\/company\/ge-tt"
+        },
+        {
+            "type": "Developers",
+            "url": "http:\/\/api.gettyimages.com\/"
+        },
+        {
+            "type": "Documentation",
+            "url": "https:\/\/api.gettyimages.com\/swagger\/ui\/index.html"
+        },
+        {
+            "type": "Email",
+            "url": "privacy@gettyimages.com"
+        },
+        {
+            "type": "Email",
+            "url": "sales@gettyimages.com"
+        },
+        {
+            "type": "Email",
+            "url": "copyright@gettyimages.com"
+        },
+        {
+            "type": "Embeddable",
+            "url": "https:\/\/github.com\/gettyimages\/connect#oembed"
+        },
+        {
+            "type": "Forums",
+            "url": "http:\/\/api.gettyimages.com\/forum"
+        },
+        {
+            "type": "Getting Started",
+            "url": "https:\/\/github.com\/gettyimages\/connect#getting-started"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/gettyimages"
+        },
+        {
+            "type": "Java SDK",
+            "url": "https:\/\/github.com\/gettyimages\/connect_sdk_java"
+        },
+        {
+            "type": "Node.js SDK",
+            "url": "https:\/\/github.com\/gettyimages\/connect_sdk_nodejs"
+        },
+        {
+            "type": "Objective-C SDK",
+            "url": "https:\/\/github.com\/gettyimages\/connect_sdk_objective-c"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/1013-2019-09-03-21-07-00.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/1013-2019-09-03-08-24-46.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/1013-2019-09-03-22-10-17.json"
+        },
+        {
+            "type": "PHP SDK",
+            "url": "https:\/\/github.com\/gettyimages\/connect_sdk_php"
+        },
+        {
+            "type": "Pricing",
+            "url": "http:\/\/www.gettyimages.com\/subscribe"
+        },
+        {
+            "type": "Ruby SDK",
+            "url": "https:\/\/github.com\/gettyimages\/connect_sdk_ruby"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/GettyImages"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/www.gettyimages.com\/"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/gettyimages.com"
+        }
+    ]
+}
