@@ -1,0 +1,3124 @@
+{
+    "id": "f186407ea32c34f980f42c004de5494e",
+    "name": "Getty Images",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "51bbdbdafb64bc4d3d647ee6f26d4f3f",
+            "name": "Search Artist Images",
+            "url": "httpsapi.gettyimages.com\/\/v3\/artists\/images",
+            "description": "Search for images by a photographer",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "artist_name",
+                    "description": "Name of artist for desired images",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Identifies page to return. Default page is 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "Specifies page size. Default page_size is 10, maximum page_size is 100.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "9b30e851c13317403df5d1765d57a296",
+            "name": "Search Artist ImaVideosges",
+            "url": "httpsapi.gettyimages.com\/\/v3\/artists\/videos",
+            "description": "Search for videos by a photographer",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "artist_name",
+                    "description": "Name of artist for desired images",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Identifies page to return. Default page is 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "Specifies page size. Default page_size is 10, maximum page_size is 100.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "a12ca513d13b4a8f5de9f21438ba4f68",
+            "name": "Get Asset Change Notifications",
+            "url": "httpsapi.gettyimages.com\/\/v3\/asset-changes\/change-sets",
+            "description": "# Asset Changes\r\n\r\nGet notifications about new, updated or deleted assets.\r\n\r\n##  Quickstart\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource.\r\nPlease see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key. \r\n\r\n    \r\nPartner channels that have not been checked within the last 120 days will be removed and that",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "channel_id",
+                    "description": "Specifies the id of the channel for the asset data. Valid channel ids can be found in the results of the Get Partner Channel query.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "batch_size",
+                    "description": "Specifies the number of assets to return. The default is 10; maximum is 500.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "3d8990e982dc706cd0d604a6a8179833",
+            "name": "Get Asset Change Notification",
+            "url": "httpsapi.gettyimages.com\/\/v3\/asset-changes\/change-sets\/{change-set-id}",
+            "description": "# Delete Asset Changes\r\n\r\nConfirm asset changes acknowledges receipt of asset changes (from the PUT asset changes endpoint).\r\n\r\n##  Quickstart\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource.\r\nPlease see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key. \r\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "change",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "d39153fb2c1769c26c2d5c3a19b479f1",
+            "name": "Get Asset Change Channels",
+            "url": "httpsapi.gettyimages.com\/\/v3\/asset-changes\/channels",
+            "description": "# Get Partner Channels\r\n\r\nRetrieves the channel data for the partner. This data can be used to populate the channel_id parameter in the Put Asset Changes query.\r\n\r\n##  Quickstart\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource.\r\nPlease see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key. \r\n\r\nOnly channels",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "93781ed0f9a365e6f2d9cd3dfd37e8a6",
+            "name": "Register Assets",
+            "url": "httpsapi.gettyimages.com\/\/v3\/asset-registrations",
+            "description": "# Register Assets\r\n\r\nRegisters a list of assets that a customer has stored in their system.\r\n\r\n##  Quickstart\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource.\r\nPlease see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key. \r\n\r\n_Note_: In the event of a successful query (response code 200) there will be nothi",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "request",
+                    "description": "Specify JSON containing an array of asset ids to register.  Limited to 500 asset ids per call.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "1468c2e36f28204afafb695987ce690c",
+            "name": "Get All Boards",
+            "url": "httpsapi.gettyimages.com\/\/v3\/boards",
+            "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq). Use this endpoint to retrieve all Boards available for a user.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more in",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "board_relationship",
+                    "description": "Search for boards the user owns or has been invited to as an editor.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Identifies page to return. Default page is 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pageSize",
+                    "description": "Request number of boards to return in each page. (default is 30).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort_order",
+                    "description": "Sort the list of boards by last update date or name. Defaults to date_last_updated_descending.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "7264d2b8d86684d86f34a92409a20a9d",
+            "name": "Create Board",
+            "url": "httpsapi.gettyimages.com\/\/v3\/boards",
+            "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq). Use this endpoint to create a Board by a specific id.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "new_board",
+                    "description": "Specify a name and description of the board to create (name is required).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "0df90a0e85295ba244f7836b4c238f9b",
+            "name": "Delete Board",
+            "url": "httpsapi.gettyimages.com\/\/v3\/boards\/{board_id}",
+            "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq). Use this endpoint to delete a Board by a specific id.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "board_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "b21af1762f7f4f2d66e3ff15d828d1b8",
+            "name": "Get Board Assets",
+            "url": "httpsapi.gettyimages.com\/\/v3\/boards\/{board_id}",
+            "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq). Use this endpoint to retrieve a Board by a specific id.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more informati",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "board_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "1e749a7da61390a3bcd83733e8189524",
+            "name": "Update Board",
+            "url": "httpsapi.gettyimages.com\/\/v3\/boards\/{board_id}",
+            "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq). Use this endpoint to update a Board by a specific id.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "board_info",
+                    "description": "Specify a new name and description for the board (name is required).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "board_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "51bf16ad81a573982c4268c1c6c0fd98",
+            "name": "Remove Assets From Board",
+            "url": "httpsapi.gettyimages.com\/\/v3\/boards\/{board_id}\/assets",
+            "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq).\r\nUse this endpoint to remove a set of assets from a board.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more inform",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "board_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "asset_ids",
+                    "description": "List the assets to be removed from the board.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "679ad33debddbf7d8c01116e6d695b07",
+            "name": "Add Assets to a Board",
+            "url": "httpsapi.gettyimages.com\/\/v3\/boards\/{board_id}\/assets",
+            "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq).\r\nUse this endpoint to add a set of assets to a board.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "board_assets",
+                    "description": "List assets to add to the board.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "board_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "5a9e589836ed04985f64bd7e4ffa7f5f",
+            "name": "Remove an asset from a board",
+            "url": "httpsapi.gettyimages.com\/\/v3\/boards\/{board_id}\/assets\/{asset_id}",
+            "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq). Use this endpoint to remove an asset from a board.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "asset_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "board_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "f9e76ee3a189f910353a79633d9b7f86",
+            "name": "Add an asset to a board",
+            "url": "httpsapi.gettyimages.com\/\/v3\/boards\/{board_id}\/assets\/{asset_id}",
+            "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place.\r\nMore information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq). Use this endpoint to add an asset to a board.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource.\r\nPlease see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on ho",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "asset_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "board_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "64e1ead2a61af1528ffe2bd91e065a31",
+            "name": "Get comments from a board",
+            "url": "httpsapi.gettyimages.com\/\/v3\/boards\/{board_id}\/comments",
+            "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq). Use this endpoint to retrieve all comments for a specific board.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "board_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "7ca2664367ebfa8312695d4bb3ab2a6e",
+            "name": "Add a comment to a board",
+            "url": "httpsapi.gettyimages.com\/\/v3\/boards\/{board_id}\/comments",
+            "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq).\r\nUse this endpoint to add a comment to a board.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on ho",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "comment",
+                    "description": "Comment to be added to the board.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "board_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "df8aff5b62e088fc4fe5a27cb3bf5e9e",
+            "name": "Delete a comment from a board",
+            "url": "httpsapi.gettyimages.com\/\/v3\/boards\/{board_id}\/comments\/{comment_id}",
+            "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq).\r\nUse this endpoint to delete a comment from a board.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "board_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "comment_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "db7b6b0ff319e830d54f18ccdc75c4c3",
+            "name": "Get Collections",
+            "url": "httpsapi.gettyimages.com\/\/v3\/collections",
+            "description": "Use this endpoint to retrieve collections associated with your Getty Images account. To browse available collections see our [Image collections page]( http:\/\/www.gettyimages.com\/creative-images\/collections).\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key.\r\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "4d7bf813c81dd759b22ce200e1b74fa9",
+            "name": "Get Countries",
+            "url": "httpsapi.gettyimages.com\/\/v3\/countries",
+            "description": "Returns a list of country objects that contains country name, two letter ISO abbreviation and three letter ISO abbreviation.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key.\r\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "39190e4898363acbac3916eb6959825b",
+            "name": "Get Downloads",
+            "url": "httpsapi.gettyimages.com\/\/v3\/downloads",
+            "description": "Returns information about a customer's previously downloaded assets.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key. \r\n \r\n\t\r\nThis endpoint requires being a Getty Images customer to limit your results to only assets that you have a license to use, \r\nyou need to also include an authorization token in the header of your request. \r\nP",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "company_downloads",
+                    "description": "If specified, returns the list of previously downloaded images for all users in your company. Your account must be enabled for this functionality. Contact your Getty Images account rep for more information. Default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "If specified, select assets downloaded on or before this date. Dates should be submitted in ISO\r\n                8601 format (i.e., YYYY-MM-DD hh:mm:ss.sss). If time is omitted, midnight is assumed. Date\/times are UTC.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Identifies page to return. Default page is 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "Specifies page size. Default page_size is 10, maximum page_size is 100.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "product_type",
+                    "description": "Specifies product type to be included in the previous download results. To get previous iStockPhoto credit downloads, credit_pack must be selected.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "If specified, select assets downloaded on or after this date. Dates should be submitted in ISO\r\n                8601 format (i.e., YYYY-MM-DD hh:mm:ss.sss). If time is omitted, midnight is assumed. Date\/times are UTC.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "8511c84844dfccb80bd12f1feb4db2f5",
+            "name": "Download an image",
+            "url": "httpsapi.gettyimages.com\/\/v3\/downloads\/images\/{id}",
+            "description": "Use this endpoint to generate download URLs and related data for images you are authorized to download.\r\n\r\nMost product offerings have enforced periodic download limits such as monthly, weekly, and daily. When this operation executes, the count of allowed downloads is decremented by one for the product offering. Once the download limit is reached for a given product offering, no further downloads may be requested for that product offering until the next download period.\r\n\r\nThe download limit for",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "download_details",
+                    "description": "<remarks>\r\n                    Additional information required from specific customers when downloading. \r\n                    Only users who have been set up with a project code by Getty Images Sales need to use this field.\r\n                <\/remarks>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "<remarks>\r\n                    Id of image to download.\r\n                <\/remarks>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "auto_download",
+                    "description": "<remarks>\r\n                    Specifies whether to auto-download the image. If true is specified, a 303 SeeOther status is returned with a\r\n                    Location header set to the location of the image.\r\n                    If false is specified, the download URI will be returned in the response message.\r\n                <\/remarks>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "file_type",
+                    "description": "<remarks>\r\n                    File Type expressed with three character file extension.\r\n                <\/remarks>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "height",
+                    "description": "<remarks>\r\n                    Specifies the pixel height of the particular image to download.\r\n                    Available heights can be found in the images\/{ids} response for the specific image.\r\n                    If left blank, it will return the largest available size.\r\n                <\/remarks>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "product_id",
+                    "description": "<remarks>\r\n                    Identifier of the instance for the selected product offering type.\r\n                <\/remarks>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "product_type",
+                    "description": "Specifies product type to be included in the previous download results. To get previous iStockPhoto credit downloads, credit_pack must be selected.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "8dec504fce5b7a808bdfc7d37e4e65e5",
+            "name": "Download a video",
+            "url": "httpsapi.gettyimages.com\/\/v3\/downloads\/videos\/{id}",
+            "description": "Use this endpoint to generate download URLs and related data for videos you are authorized to download.\r\n\r\nMost product offerings have enforced periodic download limits such as monthly, weekly, and daily. When this operation executes, the count of allowed downloads is decremented by one for the product offering. Once the download limit is reached for a given product offering, no further downloads may be requested for that product offering until the next download period.\r\n\r\nThe download limit for",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "download_details",
+                    "description": "<remarks>\r\n                    Additional information required from specific customers when downloading. \r\n                    Only users who have been set up with a project code by Getty Images Sales need to use this field.\r\n                <\/remarks>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "<remarks>\r\n                    Id of image to download.\r\n                <\/remarks>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "auto_download",
+                    "description": "<remarks>\r\n                    Specifies whether to auto-download the image. If true is specified, a 303 SeeOther status is returned with a\r\n                    Location header set to the location of the image.\r\n                    If false is specified, the download URI will be returned in the response message.\r\n                <\/remarks>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "product_id",
+                    "description": "<remarks>\r\n                    Identifier of the instance for the selected product offering type.\r\n                <\/remarks>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "size",
+                    "description": "Specifies the size to be downloaded.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "c3048b1aaf6865f8d4bfcdaa24648445",
+            "name": "Get metadata for multiple events",
+            "url": "httpsapi.gettyimages.com\/\/v3\/events",
+            "description": "This endpoint returns the detailed event metadata for all specified events. Getty Images news, sports and entertainment photographers and\r\nvideographers cover editorially relevant events occurring around the world.  All images or video clips produced in association with \r\nan event, are assigned the same EventID. EventIDs are part of the meta-data returned in SearchForImages Results. Only content \r\nproduced under a Getty Images brand name (Getty Images News, Getty Images Sports, Getty Images Ente",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ids",
+                    "description": "A comma separated list of event ids.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "08bffcd1b2661f9b32b7ea82a05ff80c",
+            "name": "Get metadata for a single event",
+            "url": "httpsapi.gettyimages.com\/\/v3\/events\/{id}",
+            "description": "This endpoint returns the detailed event metadata for a specified event. Getty Images news, sports and entertainment \r\nphotographers and videographers cover editorially relevant events occurring around the world.  \r\nAll images or video clips produced in association with an event, are assigned the same EventID. \r\nEventIDs are part of the meta-data returned in SearchForImages Results. Only content produced under a Getty Images \r\nbrand name (Getty Images News, Getty Images Sports, Getty Images Ente",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "<remarks>\r\n                    Id of image to download.\r\n                <\/remarks>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "25c72914fd97598e076269218361daaa",
+            "name": "Get Images",
+            "url": "httpsapi.gettyimages.com\/\/v3\/images",
+            "description": "This endpoint returns the detailed image metadata for all specified images. Due to a wide variety of available image resolutions,\r\nthe images are grouped into a handful of size categories for simplicity. \r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) \r\npage for more information on how to sign up for an API key. \r\n\r\n## Working with Fields Sets\r\n\r\nFields sets are used in the **fields** re",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ids",
+                    "description": "A comma separated list of event ids.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "de94b8cea226d14a5a4501cffa78859c",
+            "name": "Get Image",
+            "url": "httpsapi.gettyimages.com\/\/v3\/images\/{id}",
+            "description": "This endpoint returns the detailed image metadata for a specified image. Due to a wide variety of available image resolutions, \r\nthe images are grouped into a handful of size categories for simplicity. \r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) \r\npage for more information on how to sign up for an API key. \r\n \r\n## Working with Fields Sets\r\n\r\nFields sets are used in the **fields** req",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "<remarks>\r\n                    Id of image to download.\r\n                <\/remarks>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "992d5f5ec4bf51491b31dac3648edfc4",
+            "name": "Search Similar Images",
+            "url": "httpsapi.gettyimages.com\/\/v3\/images\/{id}\/similar",
+            "description": "This endpoint will search our asset database for images similar to the specified asset id. Due to a wide variety of available \r\nimage resolutions, the images are grouped into a handful of size categories for simplicity. \r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) \r\npage for more information on how to sign up for an API key. \r\n\r\n## Working with Fields Sets\r\n\r\nFields sets are used in t",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "<remarks>\r\n                    Id of image to download.\r\n                <\/remarks>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Identifies page to return. Default page is 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "Specifies page size. Default page_size is 10, maximum page_size is 100.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "b0cb5d6e33e2f9ee3652bf13aa20cc91",
+            "name": "Get Products",
+            "url": "httpsapi.gettyimages.com\/\/v3\/products",
+            "description": "This endpoint returns all products available to the username used during authentication. As such, this endpoint requires the use of\r\na fully authorized access_token. The product data can then be used as search filters, restricting results to images from a specific product.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html)\r\npage for more information on how to sign up for an API key.\r\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "1d418033b4c56ac04aa674db8ab79424",
+            "name": "Get Purchased Images",
+            "url": "httpsapi.gettyimages.com\/\/v3\/purchased-assets",
+            "description": "This endpoint returns a list of all assets purchased on gettyimages.com by the username used for authentication. \r\nUse of this endpoint requires configuration changes to your API key. \r\nPlease contact [developersupport@gettyimages.com](mailto:developersupport@gettyimages.com) to learn more.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html)\r\npage for more information on how to sign up for an",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "If specified, select assets downloaded on or before this date. Dates should be submitted in ISO\r\n                8601 format (i.e., YYYY-MM-DD hh:mm:ss.sss). If time is omitted, midnight is assumed. Date\/times are UTC.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Identifies page to return. Default page is 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "Specifies page size. Default page_size is 10, maximum page_size is 100.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "If specified, select assets downloaded on or after this date. Dates should be submitted in ISO\r\n                8601 format (i.e., YYYY-MM-DD hh:mm:ss.sss). If time is omitted, midnight is assumed. Date\/times are UTC.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "73e4ad01e781716b5b82f2d744b07b2f",
+            "name": "Get Previously Purchased Images",
+            "url": "httpsapi.gettyimages.com\/\/v3\/purchased-images",
+            "description": "This endpoint returns a list of all images purchased on gettyimages.com by the username used for authentication.\r\nUse of this endpoint requires configuration changes to your API key. Please contact [developersupport@gettyimages.com](mailto:developersupport@gettyimages.com)\r\nto learn more.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html)\r\npage for more information on how to sign up for an A",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "If specified, select assets downloaded on or before this date. Dates should be submitted in ISO\r\n                8601 format (i.e., YYYY-MM-DD hh:mm:ss.sss). If time is omitted, midnight is assumed. Date\/times are UTC.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Identifies page to return. Default page is 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "Specifies page size. Default page_size is 10, maximum page_size is 100.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "If specified, select assets downloaded on or after this date. Dates should be submitted in ISO\r\n                8601 format (i.e., YYYY-MM-DD hh:mm:ss.sss). If time is omitted, midnight is assumed. Date\/times are UTC.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "455b53191370b9dcb3e2ce7f78229b67",
+            "name": "Search for events",
+            "url": "httpsapi.gettyimages.com\/\/v3\/search\/events",
+            "description": "Use this endpoint to search Getty Images news, sports and entertainment events. Getty Images photographers and videographers cover editorially relevant events occurring around the world.  All images or video clips produced in association with an event, are assigned the same EventID. EventIDs are part of the meta-data returned in Search Results. Only content produced under a Getty Images brand name (Getty Images News, Getty Images Sports, Getty Images Entertainment, Film Magic, Wire Image) will b",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "date_from",
+                    "description": "Filters to events that start on or after this date. Use ISO 8601 format (e.g., 1999-12-31).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "date_to",
+                    "description": "Filters to events that start on or before this date. Use ISO 8601 format (e.g., 1999-12-31).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "editorial_segment",
+                    "description": "Filters to events with a matching editorial segment.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Identifies page to return. Default page is 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "Specifies page size. Default page_size is 10, maximum page_size is 100.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "phrase",
+                    "description": "Filters to events related to this phrase",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "b66e9cf4fc565ca1a5771aa024cd91d3",
+            "name": "Search Images",
+            "url": "httpsapi.gettyimages.com\/\/v3\/search\/images",
+            "description": "Use this endpoint to search over a blend of our contemporary stock photos, illustrations, archival images, editorial photos, illustrations and archival images. ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "age_of_people",
+                    "description": "Filter based on the age of individuals in an image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "artists",
+                    "description": "Search for images by specific artists (free-text, comma-separated list of artists).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "collection_codes",
+                    "description": "Filter by collection codes (comma-separated list). Include or exclude based on collections_filter_type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "collections_filter_type",
+                    "description": "Provides searching based on specified collection(s).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "color",
+                    "description": "Filter based on predominant color in an image. Use 6 character hexidecimal format (e.g., #002244). Note: when specified, results will not contain editorial images.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "compositions",
+                    "description": "Filter based on image composition.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "embed_content_only",
+                    "description": "Restrict search results to embeddable images. The default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ethnicity",
+                    "description": "Filter search results based on the ethnicity of individuals in an image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "event_ids",
+                    "description": "Filter based on specific events",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "exclude_nudity",
+                    "description": "Excludes images containing nudity. The default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "file_types",
+                    "description": "Return only images having a specific file type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "graphical_styles",
+                    "description": "Filter based on graphical style of the image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "keyword_ids",
+                    "description": "Return only images tagged with specific keyword(s). Specify using a comma-separated list of keyword Ids. If keyword Ids and phrase are both specified, only those images matching the query phrase which also contain the requested keyword(s) are returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "license_models",
+                    "description": "Specifies the image licensing model(s).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "minimum_size",
+                    "description": "Filter based on minimum size requested.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "number_of_people",
+                    "description": "Filter based on the number of people in the image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "orientations",
+                    "description": "Return only images with selected aspect ratios.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Identifies page to return. Default page is 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "Specifies page size. Default page_size is 10, maximum page_size is 100.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "phrase",
+                    "description": "Filters to events related to this phrase",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "prestige_content_only",
+                    "description": "Restrict search results to prestige images. The default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "product_types",
+                    "description": "Filter images to those from one of your product types. \r\n                    Allowed values are easyaccess, editorialsubscription, imagepack, premiumaccess and royaltyfreesubscription. \r\n                    If you have more than one instance of a product, you may also include the ID of the product instance you wish to filter on. \r\n                    For example, some users may have more than one premiumaccess product, so the product_types value would be premiumaccess:1234. \r\n                   ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort_order",
+                    "description": "Sort the list of boards by last update date or name. Defaults to date_last_updated_descending.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "specific_people",
+                    "description": "Return only images associated with specific people (using a comma-delimited list).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "085c99a14d69780b35ab68962ff64475",
+            "name": "Search for creative images only",
+            "url": "httpsapi.gettyimages.com\/\/v3\/search\/images\/creative",
+            "description": "Use this endpoint to search our contemporary stock photos, illustrations and archival images.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) \r\npage for more information on how to sign up for an API key. \r\n \r\nYou can show different information in the response by specifying values on the \"fields\" parameter (see details below).\r\nYou can search with only an API key, and that will give you se",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "age_of_people",
+                    "description": "Filter based on the age of individuals in an image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "artists",
+                    "description": "Search for images by specific artists (free-text, comma-separated list of artists).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "collection_codes",
+                    "description": "Filter by collection codes (comma-separated list). Include or exclude based on collections_filter_type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "collections_filter_type",
+                    "description": "Provides searching based on specified collection(s).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "color",
+                    "description": "Filter based on predominant color in an image. Use 6 character hexidecimal format (e.g., #002244). Note: when specified, results will not contain editorial images.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "compositions",
+                    "description": "Filter based on image composition.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "embed_content_only",
+                    "description": "Restrict search results to embeddable images. The default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ethnicity",
+                    "description": "Filter search results based on the ethnicity of individuals in an image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "exclude_nudity",
+                    "description": "Excludes images containing nudity. The default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "file_types",
+                    "description": "Return only images having a specific file type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "graphical_styles",
+                    "description": "Filter based on graphical style of the image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "keyword_ids",
+                    "description": "Return only images tagged with specific keyword(s). Specify using a comma-separated list of keyword Ids. If keyword Ids and phrase are both specified, only those images matching the query phrase which also contain the requested keyword(s) are returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "license_models",
+                    "description": "Specifies the image licensing model(s).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "minimum_size",
+                    "description": "Filter based on minimum size requested.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "number_of_people",
+                    "description": "Filter based on the number of people in the image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "orientations",
+                    "description": "Return only images with selected aspect ratios.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Identifies page to return. Default page is 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "Specifies page size. Default page_size is 10, maximum page_size is 100.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "phrase",
+                    "description": "Filters to events related to this phrase",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "prestige_content_only",
+                    "description": "Restrict search results to prestige images. The default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "product_types",
+                    "description": "Filter images to those from one of your product types. \r\n                    Allowed values are easyaccess, editorialsubscription, imagepack, premiumaccess and royaltyfreesubscription. \r\n                    If you have more than one instance of a product, you may also include the ID of the product instance you wish to filter on. \r\n                    For example, some users may have more than one premiumaccess product, so the product_types value would be premiumaccess:1234. \r\n                   ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort_order",
+                    "description": "Sort the list of boards by last update date or name. Defaults to date_last_updated_descending.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "9bbaf5fcf8a7351250357c74bf0f7ccb",
+            "name": "Search Images by Image",
+            "url": "httpsapi.gettyimages.com\/\/v3\/search\/images\/creative\/by-image",
+            "description": "Allows searching for similar creative images by passing the URL to an existing image.\r\n\r\nBefore calling the search by image endpoint, an image must be uploaded to a specific AWS S3 bucket. The bucket name is `search-by-image.s3.amazonaws.com`.\r\nFor example, using cURL:\r\n```sh\r\ncurl -i -X PUT https:\/\/search-by-image.s3.amazonaws.com\/my-test-image.jpg -H \"Content-Type: image\/jpeg\" --data-binary \"@testimage.jpg\"\r\n```\r\n\r\nUploads can be overwritten if the names are the same, so using a prefix like th",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "image_fingerprint",
+                    "description": "Specifies the fingerprint of the image to use in the search.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "image_url",
+                    "description": "Specifies the location of the image to use in the search.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Identifies page to return. Default page is 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "Specifies page size. Default page_size is 10, maximum page_size is 100.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "product_types",
+                    "description": "Filter images to those from one of your product types. \r\n                    Allowed values are easyaccess, editorialsubscription, imagepack, premiumaccess and royaltyfreesubscription. \r\n                    If you have more than one instance of a product, you may also include the ID of the product instance you wish to filter on. \r\n                    For example, some users may have more than one premiumaccess product, so the product_types value would be premiumaccess:1234. \r\n                   ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "56844860133a0fc0aed2b91dd485f86e",
+            "name": "Search Editorial Images",
+            "url": "httpsapi.gettyimages.com\/\/v3\/search\/images\/editorial",
+            "description": "Use this endpoint to search our editorial stock photos, illustrations and archival images.  Editorial images represent newsworthy events or illustrate matters of general interest, such as news, sport and entertainment and are generally intended for editorial use.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "age_of_people",
+                    "description": "Filter based on the age of individuals in an image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "artists",
+                    "description": "Search for images by specific artists (free-text, comma-separated list of artists).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "collection_codes",
+                    "description": "Filter by collection codes (comma-separated list). Include or exclude based on collections_filter_type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "collections_filter_type",
+                    "description": "Provides searching based on specified collection(s).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "compositions",
+                    "description": "Filter based on image composition.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "editorial_segments",
+                    "description": "Return only events with a matching editorial segment.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "embed_content_only",
+                    "description": "Restrict search results to embeddable images. The default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "If specified, select assets downloaded on or before this date. Dates should be submitted in ISO\r\n                8601 format (i.e., YYYY-MM-DD hh:mm:ss.sss). If time is omitted, midnight is assumed. Date\/times are UTC.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "entity_uris",
+                    "description": "specify linked data entity uri.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ethnicity",
+                    "description": "Filter search results based on the ethnicity of individuals in an image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "event_ids",
+                    "description": "Filter based on specific events",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "exclude_nudity",
+                    "description": "Excludes images containing nudity. The default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "file_types",
+                    "description": "Return only images having a specific file type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "graphical_styles",
+                    "description": "Filter based on graphical style of the image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "keyword_ids",
+                    "description": "Return only images tagged with specific keyword(s). Specify using a comma-separated list of keyword Ids. If keyword Ids and phrase are both specified, only those images matching the query phrase which also contain the requested keyword(s) are returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "minimum_quality_rank",
+                    "description": "Filter search results based on minimum quality ranking. Possible values 1, 2, 3 with 1 being best.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "minimum_size",
+                    "description": "Filter based on minimum size requested.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "number_of_people",
+                    "description": "Filter based on the number of people in the image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "orientations",
+                    "description": "Return only images with selected aspect ratios.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Identifies page to return. Default page is 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "Specifies page size. Default page_size is 10, maximum page_size is 100.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "phrase",
+                    "description": "Filters to events related to this phrase",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "product_types",
+                    "description": "Filter images to those from one of your product types. \r\n                    Allowed values are easyaccess, editorialsubscription, imagepack, premiumaccess and royaltyfreesubscription. \r\n                    If you have more than one instance of a product, you may also include the ID of the product instance you wish to filter on. \r\n                    For example, some users may have more than one premiumaccess product, so the product_types value would be premiumaccess:1234. \r\n                   ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort_order",
+                    "description": "Sort the list of boards by last update date or name. Defaults to date_last_updated_descending.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "specific_people",
+                    "description": "Return only images associated with specific people (using a comma-delimited list).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "If specified, select assets downloaded on or after this date. Dates should be submitted in ISO\r\n                8601 format (i.e., YYYY-MM-DD hh:mm:ss.sss). If time is omitted, midnight is assumed. Date\/times are UTC.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "868a1c05f4c2254099f4aba66d2b3c9a",
+            "name": "Search Editorial Videos",
+            "url": "httpsapi.gettyimages.com\/\/v3\/search\/videos",
+            "description": "Use this endpoint to search over a blend of our premium stock, contemporary 4K and HD footage, celebrities, news, newsmakers, entertainment, events and archival videos.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key.\r\n\r\n\r\nYou can show different information in the response by specifying values on the \"fields\" parameter (see detail",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "age_of_people",
+                    "description": "Filter based on the age of individuals in an image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "collection_codes",
+                    "description": "Filter by collection codes (comma-separated list). Include or exclude based on collections_filter_type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "collections_filter_type",
+                    "description": "Provides searching based on specified collection(s).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "editorial_video_types",
+                    "description": "Allows filtering by types of video.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "exclude_nudity",
+                    "description": "Excludes images containing nudity. The default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format_available",
+                    "description": "Filters according to the digital video format available on a film asset.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "frame_rates",
+                    "description": "Provides filtering by video frame rate (frames\/second).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "keyword_ids",
+                    "description": "Return only images tagged with specific keyword(s). Specify using a comma-separated list of keyword Ids. If keyword Ids and phrase are both specified, only those images matching the query phrase which also contain the requested keyword(s) are returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "license_models",
+                    "description": "Specifies the image licensing model(s).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Identifies page to return. Default page is 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "Specifies page size. Default page_size is 10, maximum page_size is 100.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "phrase",
+                    "description": "Filters to events related to this phrase",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "product_types",
+                    "description": "Filter images to those from one of your product types. \r\n                    Allowed values are easyaccess, editorialsubscription, imagepack, premiumaccess and royaltyfreesubscription. \r\n                    If you have more than one instance of a product, you may also include the ID of the product instance you wish to filter on. \r\n                    For example, some users may have more than one premiumaccess product, so the product_types value would be premiumaccess:1234. \r\n                   ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort_order",
+                    "description": "Sort the list of boards by last update date or name. Defaults to date_last_updated_descending.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "specific_people",
+                    "description": "Return only images associated with specific people (using a comma-delimited list).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "32d60f4ce12340e7b58c4c59e72bc4b8",
+            "name": "Search for creative videos",
+            "url": "httpsapi.gettyimages.com\/\/v3\/search\/videos\/creative",
+            "description": "Use this endpoint to search premium stock video, from archival film to contemporary 4K and HD footage.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html)\r\npage for more information on how to sign up for an API key.\r\n\r\nYou can show different information in the response by specifying values on the \"fields\" parameter (see details below).\r\nYou can search with only an API key, and that will give ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "age_of_people",
+                    "description": "Filter based on the age of individuals in an image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "collection_codes",
+                    "description": "Filter by collection codes (comma-separated list). Include or exclude based on collections_filter_type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "collections_filter_type",
+                    "description": "Provides searching based on specified collection(s).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "exclude_nudity",
+                    "description": "Excludes images containing nudity. The default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format_available",
+                    "description": "Filters according to the digital video format available on a film asset.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "frame_rates",
+                    "description": "Provides filtering by video frame rate (frames\/second).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "keyword_ids",
+                    "description": "Return only images tagged with specific keyword(s). Specify using a comma-separated list of keyword Ids. If keyword Ids and phrase are both specified, only those images matching the query phrase which also contain the requested keyword(s) are returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "license_models",
+                    "description": "Specifies the image licensing model(s).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Identifies page to return. Default page is 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "Specifies page size. Default page_size is 10, maximum page_size is 100.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "phrase",
+                    "description": "Filters to events related to this phrase",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "product_types",
+                    "description": "Filter images to those from one of your product types. \r\n                    Allowed values are easyaccess, editorialsubscription, imagepack, premiumaccess and royaltyfreesubscription. \r\n                    If you have more than one instance of a product, you may also include the ID of the product instance you wish to filter on. \r\n                    For example, some users may have more than one premiumaccess product, so the product_types value would be premiumaccess:1234. \r\n                   ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort_order",
+                    "description": "Sort the list of boards by last update date or name. Defaults to date_last_updated_descending.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "5bd0221c2f804d86ea1eddec0e4967d2",
+            "name": "Search for editorial videos",
+            "url": "httpsapi.gettyimages.com\/\/v3\/search\/videos\/editorial",
+            "description": "Use this endpoint to search current and archival video clips of celebrities, newsmakers, and events.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key.\r\n\r\nYou can show different information in the response by specifying values on the \"fields\" parameter (see details below).\r\nYou can search with only an API key, and that will give you",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "age_of_people",
+                    "description": "Filter based on the age of individuals in an image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "collection_codes",
+                    "description": "Filter by collection codes (comma-separated list). Include or exclude based on collections_filter_type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "collections_filter_type",
+                    "description": "Provides searching based on specified collection(s).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "editorial_video_types",
+                    "description": "Allows filtering by types of video.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "entity_uris",
+                    "description": "specify linked data entity uri.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "exclude_nudity",
+                    "description": "Excludes images containing nudity. The default is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format_available",
+                    "description": "Filters according to the digital video format available on a film asset.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "frame_rates",
+                    "description": "Provides filtering by video frame rate (frames\/second).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "keyword_ids",
+                    "description": "Return only images tagged with specific keyword(s). Specify using a comma-separated list of keyword Ids. If keyword Ids and phrase are both specified, only those images matching the query phrase which also contain the requested keyword(s) are returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Identifies page to return. Default page is 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "Specifies page size. Default page_size is 10, maximum page_size is 100.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "phrase",
+                    "description": "Filters to events related to this phrase",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "product_types",
+                    "description": "Filter images to those from one of your product types. \r\n                    Allowed values are easyaccess, editorialsubscription, imagepack, premiumaccess and royaltyfreesubscription. \r\n                    If you have more than one instance of a product, you may also include the ID of the product instance you wish to filter on. \r\n                    For example, some users may have more than one premiumaccess product, so the product_types value would be premiumaccess:1234. \r\n                   ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort_order",
+                    "description": "Sort the list of boards by last update date or name. Defaults to date_last_updated_descending.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "specific_people",
+                    "description": "Return only images associated with specific people (using a comma-delimited list).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "5f15725e70af5611ea03d9150e147413",
+            "name": "Reports Usage Batches",
+            "url": "httpsapi.gettyimages.com\/\/v3\/usage-batches\/{id}",
+            "description": "# Report Usage\r\n\r\nUse this endpoint to report the usages of a set of assets. The count of assets submitted in a single batch to this endpoint is limited to 1000. Note that all asset Ids specified must be valid or the operation will fail causing no usages to be recorded. In this case, you will need to remove the invalid asset Ids from the query request and re-submit the query.\r\n\r\n##  Quickstart\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorizati",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "request",
+                    "description": "Specify JSON containing an array of asset ids to register.  Limited to 500 asset ids per call.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "<remarks>\r\n                    Id of image to download.\r\n                <\/remarks>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "eacfdfc7108b08b25a9fff1e68af137a",
+            "name": "Get Videos Metadatata",
+            "url": "httpsapi.gettyimages.com\/\/v3\/videos",
+            "description": "Use this endpoint to return detailed video metadata for all the specified video ids.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key.\r\n\r\nYou can show different information in the response by specifying values on the \"fields\" parameter (see details below).\r\nYou can search with only an API key, and that will give you search results ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ids",
+                    "description": "A comma separated list of event ids.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "07427efb09d29eff53edb24d0852dbed",
+            "name": "Get Video Metadatata",
+            "url": "httpsapi.gettyimages.com\/\/v3\/videos\/{id}",
+            "description": "Use this endpoint to return detailed video metadata for the specified video id.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key.\r\n\r\nYou can show different information in the response by specifying values on the \"fields\" parameter (see details below).\r\nYou can search with only an API key, and that will give you search results that ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "<remarks>\r\n                    Id of image to download.\r\n                <\/remarks>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        },
+        {
+            "id": "f4f7a8902182fb2494a37e2611828435",
+            "name": "Get Similar Videos",
+            "url": "httpsapi.gettyimages.com\/\/v3\/videos\/{id}\/similar",
+            "description": "Get videos similar to a video by supplying one video id",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Accept",
+                    "description": "Provide a header to specify the language of result values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Authorization",
+                    "description": "Provide access token in the format of 'Bearer {token}'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "<remarks>\r\n                    Id of image to download.\r\n                <\/remarks>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields",
+                    "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Identifies page to return. Default page is 1.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "Specifies page size. Default page_size is 10, maximum page_size is 100.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "rawModeData": ""
+        }
+    ]
+}
