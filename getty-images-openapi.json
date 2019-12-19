@@ -1,0 +1,4258 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Getty Images",
+        "description": "Build applications using the world's most powerful imagery",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsapi.gettyimages.com\/"
+    ],
+    "paths": {
+        "\/v3\/artists\/images": {
+            "get": {
+                "summary": "Search Artist Images",
+                "description": "Search for images by a photographer",
+                "operationId": "ArtistsGetImagesByArtist",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "artist_name",
+                        "in": "query",
+                        "description": "Name of artist for desired images"
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned."
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Identifies page to return. Default page is 1."
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "Specifies page size. Default page_size is 10, maximum page_size is 100."
+                    }
+                ]
+            }
+        },
+        "\/v3\/artists\/videos": {
+            "get": {
+                "summary": "Search Artist ImaVideosges",
+                "description": "Search for videos by a photographer",
+                "operationId": "ArtistsGetVideosByArtist",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "artist_name",
+                        "in": "query",
+                        "description": "Name of artist for desired images"
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned."
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Identifies page to return. Default page is 1."
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "Specifies page size. Default page_size is 10, maximum page_size is 100."
+                    }
+                ]
+            }
+        },
+        "\/v3\/asset-changes\/change-sets": {
+            "put": {
+                "summary": "Get Asset Change Notifications",
+                "description": "# Asset Changes\r\n\r\nGet notifications about new, updated or deleted assets.\r\n\r\n##  Quickstart\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource.\r\nPlease see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key. \r\n\r\n    \r\nPartner channels that have not been checked within the last 120 days will be removed and that",
+                "operationId": "AssetChangesPutAssetChanges",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "channel_id",
+                        "in": "query",
+                        "description": "Specifies the id of the channel for the asset data. Valid channel ids can be found in the results of the Get Partner Channel query."
+                    },
+                    {
+                        "name": "batch_size",
+                        "in": "query",
+                        "description": "Specifies the number of assets to return. The default is 10; maximum is 500."
+                    }
+                ]
+            }
+        },
+        "\/v3\/asset-changes\/change-sets\/{change-set-id}": {
+            "delete": {
+                "summary": "Get Asset Change Notification",
+                "description": "# Delete Asset Changes\r\n\r\nConfirm asset changes acknowledges receipt of asset changes (from the PUT asset changes endpoint).\r\n\r\n##  Quickstart\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource.\r\nPlease see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key. \r\n",
+                "operationId": "AssetChangesDeleteAssetChanges",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "change",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/v3\/asset-changes\/channels": {
+            "get": {
+                "summary": "Get Asset Change Channels",
+                "description": "# Get Partner Channels\r\n\r\nRetrieves the channel data for the partner. This data can be used to populate the channel_id parameter in the Put Asset Changes query.\r\n\r\n##  Quickstart\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource.\r\nPlease see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key. \r\n\r\nOnly channels",
+                "operationId": "AssetChangesGetPartnerChannel",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    }
+                ]
+            }
+        },
+        "\/v3\/asset-registrations": {
+            "post": {
+                "summary": "Register Assets",
+                "description": "# Register Assets\r\n\r\nRegisters a list of assets that a customer has stored in their system.\r\n\r\n##  Quickstart\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource.\r\nPlease see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key. \r\n\r\n_Note_: In the event of a successful query (response code 200) there will be nothi",
+                "operationId": "AssetRegistrationRegister",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "request",
+                        "in": "body",
+                        "description": "Specify JSON containing an array of asset ids to register.  Limited to 500 asset ids per call."
+                    }
+                ]
+            }
+        },
+        "\/v3\/boards": {
+            "get": {
+                "summary": "Get All Boards",
+                "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq). Use this endpoint to retrieve all Boards available for a user.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more in",
+                "operationId": "BoardsGetAllBoards",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "board_relationship",
+                        "in": "query",
+                        "description": "Search for boards the user owns or has been invited to as an editor."
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Identifies page to return. Default page is 1."
+                    },
+                    {
+                        "name": "pageSize",
+                        "in": "query",
+                        "description": "Request number of boards to return in each page. (default is 30)."
+                    },
+                    {
+                        "name": "sort_order",
+                        "in": "query",
+                        "description": "Sort the list of boards by last update date or name. Defaults to date_last_updated_descending."
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create Board",
+                "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq). Use this endpoint to create a Board by a specific id.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information",
+                "operationId": "BoardsCreateBoard",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "new_board",
+                        "in": "body",
+                        "description": "Specify a name and description of the board to create (name is required)."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    }
+                ]
+            }
+        },
+        "\/v3\/boards\/{board_id}": {
+            "delete": {
+                "summary": "Delete Board",
+                "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq). Use this endpoint to delete a Board by a specific id.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information",
+                "operationId": "BoardsDeleteBoard",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "board_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Board Assets",
+                "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq). Use this endpoint to retrieve a Board by a specific id.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more informati",
+                "operationId": "BoardsGetBoard",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "board_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update Board",
+                "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq). Use this endpoint to update a Board by a specific id.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information",
+                "operationId": "BoardsUpdateBoard",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "board_info",
+                        "in": "body",
+                        "description": "Specify a new name and description for the board (name is required)."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "board_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/v3\/boards\/{board_id}\/assets": {
+            "delete": {
+                "summary": "Remove Assets From Board",
+                "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq).\r\nUse this endpoint to remove a set of assets from a board.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more inform",
+                "operationId": "BoardsRemoveAssets",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "board_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "asset_ids",
+                        "in": "query",
+                        "description": "List the assets to be removed from the board."
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Add Assets to a Board",
+                "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq).\r\nUse this endpoint to add a set of assets to a board.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information",
+                "operationId": "BoardsAddAssets",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "board_assets",
+                        "in": "body",
+                        "description": "List assets to add to the board."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "board_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/v3\/boards\/{board_id}\/assets\/{asset_id}": {
+            "delete": {
+                "summary": "Remove an asset from a board",
+                "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq). Use this endpoint to remove an asset from a board.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on",
+                "operationId": "BoardsRemoveAsset",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "asset_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "board_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Add an asset to a board",
+                "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place.\r\nMore information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq). Use this endpoint to add an asset to a board.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource.\r\nPlease see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on ho",
+                "operationId": "BoardsAddAsset",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "asset_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "board_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/v3\/boards\/{board_id}\/comments": {
+            "get": {
+                "summary": "Get comments from a board",
+                "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq). Use this endpoint to retrieve all comments for a specific board.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more ",
+                "operationId": "BoardsGetComments",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "board_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add a comment to a board",
+                "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq).\r\nUse this endpoint to add a comment to a board.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on ho",
+                "operationId": "BoardsAddComment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "comment",
+                        "in": "body",
+                        "description": "Comment to be added to the board."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "board_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/v3\/boards\/{board_id}\/comments\/{comment_id}": {
+            "delete": {
+                "summary": "Delete a comment from a board",
+                "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq).\r\nUse this endpoint to delete a comment from a board.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information ",
+                "operationId": "BoardsDeleteComment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "board_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "comment_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/v3\/collections": {
+            "get": {
+                "summary": "Get Collections",
+                "description": "Use this endpoint to retrieve collections associated with your Getty Images account. To browse available collections see our [Image collections page]( http:\/\/www.gettyimages.com\/creative-images\/collections).\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key.\r\n",
+                "operationId": "CollectionsGetCollections",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    }
+                ]
+            }
+        },
+        "\/v3\/countries": {
+            "get": {
+                "summary": "Get Countries",
+                "description": "Returns a list of country objects that contains country name, two letter ISO abbreviation and three letter ISO abbreviation.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key.\r\n",
+                "operationId": "CountriesGetCountries",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    }
+                ]
+            }
+        },
+        "\/v3\/downloads": {
+            "get": {
+                "summary": "Get Downloads",
+                "description": "Returns information about a customer's previously downloaded assets.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key. \r\n \r\n\t\r\nThis endpoint requires being a Getty Images customer to limit your results to only assets that you have a license to use, \r\nyou need to also include an authorization token in the header of your request. \r\nP",
+                "operationId": "DownloadsGetDownloads",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "company_downloads",
+                        "in": "query",
+                        "description": "If specified, returns the list of previously downloaded images for all users in your company. Your account must be enabled for this functionality. Contact your Getty Images account rep for more information. Default is false."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "If specified, select assets downloaded on or before this date. Dates should be submitted in ISO\r\n                8601 format (i.e., YYYY-MM-DD hh:mm:ss.sss). If time is omitted, midnight is assumed. Date\/times are UTC."
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Identifies page to return. Default page is 1."
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "Specifies page size. Default page_size is 10, maximum page_size is 100."
+                    },
+                    {
+                        "name": "product_type",
+                        "in": "query",
+                        "description": "Specifies product type to be included in the previous download results. To get previous iStockPhoto credit downloads, credit_pack must be selected."
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "If specified, select assets downloaded on or after this date. Dates should be submitted in ISO\r\n                8601 format (i.e., YYYY-MM-DD hh:mm:ss.sss). If time is omitted, midnight is assumed. Date\/times are UTC."
+                    }
+                ]
+            }
+        },
+        "\/v3\/downloads\/images\/{id}": {
+            "post": {
+                "summary": "Download an image",
+                "description": "Use this endpoint to generate download URLs and related data for images you are authorized to download.\r\n\r\nMost product offerings have enforced periodic download limits such as monthly, weekly, and daily. When this operation executes, the count of allowed downloads is decremented by one for the product offering. Once the download limit is reached for a given product offering, no further downloads may be requested for that product offering until the next download period.\r\n\r\nThe download limit for",
+                "operationId": "DownloadsPostDownloads",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "download_details",
+                        "in": "body",
+                        "description": "<remarks>\r\n                    Additional information required from specific customers when downloading. \r\n                    Only users who have been set up with a project code by Getty Images Sales need to use this field.\r\n                <\/remarks>"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "<remarks>\r\n                    Id of image to download.\r\n                <\/remarks>"
+                    },
+                    {
+                        "name": "auto_download",
+                        "in": "query",
+                        "description": "<remarks>\r\n                    Specifies whether to auto-download the image. If true is specified, a 303 SeeOther status is returned with a\r\n                    Location header set to the location of the image.\r\n                    If false is specified, the download URI will be returned in the response message.\r\n                <\/remarks>"
+                    },
+                    {
+                        "name": "file_type",
+                        "in": "query",
+                        "description": "<remarks>\r\n                    File Type expressed with three character file extension.\r\n                <\/remarks>"
+                    },
+                    {
+                        "name": "height",
+                        "in": "query",
+                        "description": "<remarks>\r\n                    Specifies the pixel height of the particular image to download.\r\n                    Available heights can be found in the images\/{ids} response for the specific image.\r\n                    If left blank, it will return the largest available size.\r\n                <\/remarks>"
+                    },
+                    {
+                        "name": "product_id",
+                        "in": "query",
+                        "description": "<remarks>\r\n                    Identifier of the instance for the selected product offering type.\r\n                <\/remarks>"
+                    },
+                    {
+                        "name": "product_type",
+                        "in": "query",
+                        "description": "Specifies product type to be included in the previous download results. To get previous iStockPhoto credit downloads, credit_pack must be selected."
+                    }
+                ]
+            }
+        },
+        "\/v3\/downloads\/videos\/{id}": {
+            "post": {
+                "summary": "Download a video",
+                "description": "Use this endpoint to generate download URLs and related data for videos you are authorized to download.\r\n\r\nMost product offerings have enforced periodic download limits such as monthly, weekly, and daily. When this operation executes, the count of allowed downloads is decremented by one for the product offering. Once the download limit is reached for a given product offering, no further downloads may be requested for that product offering until the next download period.\r\n\r\nThe download limit for",
+                "operationId": "DownloadsPostVideoDownloads",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "download_details",
+                        "in": "body",
+                        "description": "<remarks>\r\n                    Additional information required from specific customers when downloading. \r\n                    Only users who have been set up with a project code by Getty Images Sales need to use this field.\r\n                <\/remarks>"
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "<remarks>\r\n                    Id of image to download.\r\n                <\/remarks>"
+                    },
+                    {
+                        "name": "auto_download",
+                        "in": "query",
+                        "description": "<remarks>\r\n                    Specifies whether to auto-download the image. If true is specified, a 303 SeeOther status is returned with a\r\n                    Location header set to the location of the image.\r\n                    If false is specified, the download URI will be returned in the response message.\r\n                <\/remarks>"
+                    },
+                    {
+                        "name": "product_id",
+                        "in": "query",
+                        "description": "<remarks>\r\n                    Identifier of the instance for the selected product offering type.\r\n                <\/remarks>"
+                    },
+                    {
+                        "name": "size",
+                        "in": "query",
+                        "description": "Specifies the size to be downloaded."
+                    }
+                ]
+            }
+        },
+        "\/v3\/events": {
+            "get": {
+                "summary": "Get metadata for multiple events",
+                "description": "This endpoint returns the detailed event metadata for all specified events. Getty Images news, sports and entertainment photographers and\r\nvideographers cover editorially relevant events occurring around the world.  All images or video clips produced in association with \r\nan event, are assigned the same EventID. EventIDs are part of the meta-data returned in SearchForImages Results. Only content \r\nproduced under a Getty Images brand name (Getty Images News, Getty Images Sports, Getty Images Ente",
+                "operationId": "EventsGetBatch",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned."
+                    },
+                    {
+                        "name": "ids",
+                        "in": "query",
+                        "description": "A comma separated list of event ids."
+                    }
+                ]
+            }
+        },
+        "\/v3\/events\/{id}": {
+            "get": {
+                "summary": "Get metadata for a single event",
+                "description": "This endpoint returns the detailed event metadata for a specified event. Getty Images news, sports and entertainment \r\nphotographers and videographers cover editorially relevant events occurring around the world.  \r\nAll images or video clips produced in association with an event, are assigned the same EventID. \r\nEventIDs are part of the meta-data returned in SearchForImages Results. Only content produced under a Getty Images \r\nbrand name (Getty Images News, Getty Images Sports, Getty Images Ente",
+                "operationId": "EventsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "<remarks>\r\n                    Id of image to download.\r\n                <\/remarks>"
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned."
+                    }
+                ]
+            }
+        },
+        "\/v3\/images": {
+            "get": {
+                "summary": "Get Images",
+                "description": "This endpoint returns the detailed image metadata for all specified images. Due to a wide variety of available image resolutions,\r\nthe images are grouped into a handful of size categories for simplicity. \r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) \r\npage for more information on how to sign up for an API key. \r\n\r\n## Working with Fields Sets\r\n\r\nFields sets are used in the **fields** re",
+                "operationId": "ImagesGetBatch",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "ids",
+                        "in": "query",
+                        "description": "A comma separated list of event ids."
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned."
+                    }
+                ]
+            }
+        },
+        "\/v3\/images\/{id}": {
+            "get": {
+                "summary": "Get Image",
+                "description": "This endpoint returns the detailed image metadata for a specified image. Due to a wide variety of available image resolutions, \r\nthe images are grouped into a handful of size categories for simplicity. \r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) \r\npage for more information on how to sign up for an API key. \r\n \r\n## Working with Fields Sets\r\n\r\nFields sets are used in the **fields** req",
+                "operationId": "ImagesGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "<remarks>\r\n                    Id of image to download.\r\n                <\/remarks>"
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned."
+                    }
+                ]
+            }
+        },
+        "\/v3\/images\/{id}\/similar": {
+            "get": {
+                "summary": "Search Similar Images",
+                "description": "This endpoint will search our asset database for images similar to the specified asset id. Due to a wide variety of available \r\nimage resolutions, the images are grouped into a handful of size categories for simplicity. \r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) \r\npage for more information on how to sign up for an API key. \r\n\r\n## Working with Fields Sets\r\n\r\nFields sets are used in t",
+                "operationId": "ImagesGetSimilarImages",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "<remarks>\r\n                    Id of image to download.\r\n                <\/remarks>"
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned."
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Identifies page to return. Default page is 1."
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "Specifies page size. Default page_size is 10, maximum page_size is 100."
+                    }
+                ]
+            }
+        },
+        "\/v3\/products": {
+            "get": {
+                "summary": "Get Products",
+                "description": "This endpoint returns all products available to the username used during authentication. As such, this endpoint requires the use of\r\na fully authorized access_token. The product data can then be used as search filters, restricting results to images from a specific product.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html)\r\npage for more information on how to sign up for an API key.\r\n",
+                "operationId": "ProductsGetProducts",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned."
+                    }
+                ]
+            }
+        },
+        "\/v3\/purchased-assets": {
+            "get": {
+                "summary": "Get Purchased Images",
+                "description": "This endpoint returns a list of all assets purchased on gettyimages.com by the username used for authentication. \r\nUse of this endpoint requires configuration changes to your API key. \r\nPlease contact [developersupport@gettyimages.com](mailto:developersupport@gettyimages.com) to learn more.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html)\r\npage for more information on how to sign up for an",
+                "operationId": "PurchasesGetPreviousAssetPurchases",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "If specified, select assets downloaded on or before this date. Dates should be submitted in ISO\r\n                8601 format (i.e., YYYY-MM-DD hh:mm:ss.sss). If time is omitted, midnight is assumed. Date\/times are UTC."
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Identifies page to return. Default page is 1."
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "Specifies page size. Default page_size is 10, maximum page_size is 100."
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "If specified, select assets downloaded on or after this date. Dates should be submitted in ISO\r\n                8601 format (i.e., YYYY-MM-DD hh:mm:ss.sss). If time is omitted, midnight is assumed. Date\/times are UTC."
+                    }
+                ]
+            }
+        },
+        "\/v3\/purchased-images": {
+            "get": {
+                "summary": "Get Previously Purchased Images",
+                "description": "This endpoint returns a list of all images purchased on gettyimages.com by the username used for authentication.\r\nUse of this endpoint requires configuration changes to your API key. Please contact [developersupport@gettyimages.com](mailto:developersupport@gettyimages.com)\r\nto learn more.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html)\r\npage for more information on how to sign up for an A",
+                "operationId": "PurchasesGetPreviousPurchases",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "If specified, select assets downloaded on or before this date. Dates should be submitted in ISO\r\n                8601 format (i.e., YYYY-MM-DD hh:mm:ss.sss). If time is omitted, midnight is assumed. Date\/times are UTC."
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Identifies page to return. Default page is 1."
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "Specifies page size. Default page_size is 10, maximum page_size is 100."
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "If specified, select assets downloaded on or after this date. Dates should be submitted in ISO\r\n                8601 format (i.e., YYYY-MM-DD hh:mm:ss.sss). If time is omitted, midnight is assumed. Date\/times are UTC."
+                    }
+                ]
+            }
+        },
+        "\/v3\/search\/events": {
+            "get": {
+                "summary": "Search for events",
+                "description": "Use this endpoint to search Getty Images news, sports and entertainment events. Getty Images photographers and videographers cover editorially relevant events occurring around the world.  All images or video clips produced in association with an event, are assigned the same EventID. EventIDs are part of the meta-data returned in Search Results. Only content produced under a Getty Images brand name (Getty Images News, Getty Images Sports, Getty Images Entertainment, Film Magic, Wire Image) will b",
+                "operationId": "SearchGetEvents",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "date_from",
+                        "in": "query",
+                        "description": "Filters to events that start on or after this date. Use ISO 8601 format (e.g., 1999-12-31)."
+                    },
+                    {
+                        "name": "date_to",
+                        "in": "query",
+                        "description": "Filters to events that start on or before this date. Use ISO 8601 format (e.g., 1999-12-31)."
+                    },
+                    {
+                        "name": "editorial_segment",
+                        "in": "query",
+                        "description": "Filters to events with a matching editorial segment."
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned."
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Identifies page to return. Default page is 1."
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "Specifies page size. Default page_size is 10, maximum page_size is 100."
+                    },
+                    {
+                        "name": "phrase",
+                        "in": "query",
+                        "description": "Filters to events related to this phrase"
+                    }
+                ]
+            }
+        },
+        "\/v3\/search\/images": {
+            "get": {
+                "summary": "Search Images",
+                "description": "Use this endpoint to search over a blend of our contemporary stock photos, illustrations, archival images, editorial photos, illustrations and archival images. ",
+                "operationId": "SearchGetImagesByPhrase",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "age_of_people",
+                        "in": "query",
+                        "description": "Filter based on the age of individuals in an image."
+                    },
+                    {
+                        "name": "artists",
+                        "in": "query",
+                        "description": "Search for images by specific artists (free-text, comma-separated list of artists)."
+                    },
+                    {
+                        "name": "collection_codes",
+                        "in": "query",
+                        "description": "Filter by collection codes (comma-separated list). Include or exclude based on collections_filter_type."
+                    },
+                    {
+                        "name": "collections_filter_type",
+                        "in": "query",
+                        "description": "Provides searching based on specified collection(s)."
+                    },
+                    {
+                        "name": "color",
+                        "in": "query",
+                        "description": "Filter based on predominant color in an image. Use 6 character hexidecimal format (e.g., #002244). Note: when specified, results will not contain editorial images."
+                    },
+                    {
+                        "name": "compositions",
+                        "in": "query",
+                        "description": "Filter based on image composition."
+                    },
+                    {
+                        "name": "embed_content_only",
+                        "in": "query",
+                        "description": "Restrict search results to embeddable images. The default is false."
+                    },
+                    {
+                        "name": "ethnicity",
+                        "in": "query",
+                        "description": "Filter search results based on the ethnicity of individuals in an image."
+                    },
+                    {
+                        "name": "event_ids",
+                        "in": "query",
+                        "description": "Filter based on specific events"
+                    },
+                    {
+                        "name": "exclude_nudity",
+                        "in": "query",
+                        "description": "Excludes images containing nudity. The default is false."
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned."
+                    },
+                    {
+                        "name": "file_types",
+                        "in": "query",
+                        "description": "Return only images having a specific file type."
+                    },
+                    {
+                        "name": "graphical_styles",
+                        "in": "query",
+                        "description": "Filter based on graphical style of the image."
+                    },
+                    {
+                        "name": "keyword_ids",
+                        "in": "query",
+                        "description": "Return only images tagged with specific keyword(s). Specify using a comma-separated list of keyword Ids. If keyword Ids and phrase are both specified, only those images matching the query phrase which also contain the requested keyword(s) are returned."
+                    },
+                    {
+                        "name": "license_models",
+                        "in": "query",
+                        "description": "Specifies the image licensing model(s)."
+                    },
+                    {
+                        "name": "minimum_size",
+                        "in": "query",
+                        "description": "Filter based on minimum size requested."
+                    },
+                    {
+                        "name": "number_of_people",
+                        "in": "query",
+                        "description": "Filter based on the number of people in the image."
+                    },
+                    {
+                        "name": "orientations",
+                        "in": "query",
+                        "description": "Return only images with selected aspect ratios."
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Identifies page to return. Default page is 1."
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "Specifies page size. Default page_size is 10, maximum page_size is 100."
+                    },
+                    {
+                        "name": "phrase",
+                        "in": "query",
+                        "description": "Filters to events related to this phrase"
+                    },
+                    {
+                        "name": "prestige_content_only",
+                        "in": "query",
+                        "description": "Restrict search results to prestige images. The default is false."
+                    },
+                    {
+                        "name": "product_types",
+                        "in": "query",
+                        "description": "Filter images to those from one of your product types. \r\n                    Allowed values are easyaccess, editorialsubscription, imagepack, premiumaccess and royaltyfreesubscription. \r\n                    If you have more than one instance of a product, you may also include the ID of the product instance you wish to filter on. \r\n                    For example, some users may have more than one premiumaccess product, so the product_types value would be premiumaccess:1234. \r\n                   "
+                    },
+                    {
+                        "name": "sort_order",
+                        "in": "query",
+                        "description": "Sort the list of boards by last update date or name. Defaults to date_last_updated_descending."
+                    },
+                    {
+                        "name": "specific_people",
+                        "in": "query",
+                        "description": "Return only images associated with specific people (using a comma-delimited list)."
+                    }
+                ]
+            }
+        },
+        "\/v3\/search\/images\/creative": {
+            "get": {
+                "summary": "Search for creative images only",
+                "description": "Use this endpoint to search our contemporary stock photos, illustrations and archival images.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) \r\npage for more information on how to sign up for an API key. \r\n \r\nYou can show different information in the response by specifying values on the \"fields\" parameter (see details below).\r\nYou can search with only an API key, and that will give you se",
+                "operationId": "SearchGetCreativeImagesByPhrase",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "age_of_people",
+                        "in": "query",
+                        "description": "Filter based on the age of individuals in an image."
+                    },
+                    {
+                        "name": "artists",
+                        "in": "query",
+                        "description": "Search for images by specific artists (free-text, comma-separated list of artists)."
+                    },
+                    {
+                        "name": "collection_codes",
+                        "in": "query",
+                        "description": "Filter by collection codes (comma-separated list). Include or exclude based on collections_filter_type."
+                    },
+                    {
+                        "name": "collections_filter_type",
+                        "in": "query",
+                        "description": "Provides searching based on specified collection(s)."
+                    },
+                    {
+                        "name": "color",
+                        "in": "query",
+                        "description": "Filter based on predominant color in an image. Use 6 character hexidecimal format (e.g., #002244). Note: when specified, results will not contain editorial images."
+                    },
+                    {
+                        "name": "compositions",
+                        "in": "query",
+                        "description": "Filter based on image composition."
+                    },
+                    {
+                        "name": "embed_content_only",
+                        "in": "query",
+                        "description": "Restrict search results to embeddable images. The default is false."
+                    },
+                    {
+                        "name": "ethnicity",
+                        "in": "query",
+                        "description": "Filter search results based on the ethnicity of individuals in an image."
+                    },
+                    {
+                        "name": "exclude_nudity",
+                        "in": "query",
+                        "description": "Excludes images containing nudity. The default is false."
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned."
+                    },
+                    {
+                        "name": "file_types",
+                        "in": "query",
+                        "description": "Return only images having a specific file type."
+                    },
+                    {
+                        "name": "graphical_styles",
+                        "in": "query",
+                        "description": "Filter based on graphical style of the image."
+                    },
+                    {
+                        "name": "keyword_ids",
+                        "in": "query",
+                        "description": "Return only images tagged with specific keyword(s). Specify using a comma-separated list of keyword Ids. If keyword Ids and phrase are both specified, only those images matching the query phrase which also contain the requested keyword(s) are returned."
+                    },
+                    {
+                        "name": "license_models",
+                        "in": "query",
+                        "description": "Specifies the image licensing model(s)."
+                    },
+                    {
+                        "name": "minimum_size",
+                        "in": "query",
+                        "description": "Filter based on minimum size requested."
+                    },
+                    {
+                        "name": "number_of_people",
+                        "in": "query",
+                        "description": "Filter based on the number of people in the image."
+                    },
+                    {
+                        "name": "orientations",
+                        "in": "query",
+                        "description": "Return only images with selected aspect ratios."
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Identifies page to return. Default page is 1."
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "Specifies page size. Default page_size is 10, maximum page_size is 100."
+                    },
+                    {
+                        "name": "phrase",
+                        "in": "query",
+                        "description": "Filters to events related to this phrase"
+                    },
+                    {
+                        "name": "prestige_content_only",
+                        "in": "query",
+                        "description": "Restrict search results to prestige images. The default is false."
+                    },
+                    {
+                        "name": "product_types",
+                        "in": "query",
+                        "description": "Filter images to those from one of your product types. \r\n                    Allowed values are easyaccess, editorialsubscription, imagepack, premiumaccess and royaltyfreesubscription. \r\n                    If you have more than one instance of a product, you may also include the ID of the product instance you wish to filter on. \r\n                    For example, some users may have more than one premiumaccess product, so the product_types value would be premiumaccess:1234. \r\n                   "
+                    },
+                    {
+                        "name": "sort_order",
+                        "in": "query",
+                        "description": "Sort the list of boards by last update date or name. Defaults to date_last_updated_descending."
+                    }
+                ]
+            }
+        },
+        "\/v3\/search\/images\/creative\/by-image": {
+            "get": {
+                "summary": "Search Images by Image",
+                "description": "Allows searching for similar creative images by passing the URL to an existing image.\r\n\r\nBefore calling the search by image endpoint, an image must be uploaded to a specific AWS S3 bucket. The bucket name is `search-by-image.s3.amazonaws.com`.\r\nFor example, using cURL:\r\n```sh\r\ncurl -i -X PUT https:\/\/search-by-image.s3.amazonaws.com\/my-test-image.jpg -H \"Content-Type: image\/jpeg\" --data-binary \"@testimage.jpg\"\r\n```\r\n\r\nUploads can be overwritten if the names are the same, so using a prefix like th",
+                "operationId": "SearchGetCreativeImagesByUrl",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned."
+                    },
+                    {
+                        "name": "image_fingerprint",
+                        "in": "query",
+                        "description": "Specifies the fingerprint of the image to use in the search."
+                    },
+                    {
+                        "name": "image_url",
+                        "in": "query",
+                        "description": "Specifies the location of the image to use in the search."
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Identifies page to return. Default page is 1."
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "Specifies page size. Default page_size is 10, maximum page_size is 100."
+                    },
+                    {
+                        "name": "product_types",
+                        "in": "query",
+                        "description": "Filter images to those from one of your product types. \r\n                    Allowed values are easyaccess, editorialsubscription, imagepack, premiumaccess and royaltyfreesubscription. \r\n                    If you have more than one instance of a product, you may also include the ID of the product instance you wish to filter on. \r\n                    For example, some users may have more than one premiumaccess product, so the product_types value would be premiumaccess:1234. \r\n                   "
+                    }
+                ]
+            }
+        },
+        "\/v3\/search\/images\/editorial": {
+            "get": {
+                "summary": "Search Editorial Images",
+                "description": "Use this endpoint to search our editorial stock photos, illustrations and archival images.  Editorial images represent newsworthy events or illustrate matters of general interest, such as news, sport and entertainment and are generally intended for editorial use.",
+                "operationId": "SearchGetEditorialImagesByPhrase",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "age_of_people",
+                        "in": "query",
+                        "description": "Filter based on the age of individuals in an image."
+                    },
+                    {
+                        "name": "artists",
+                        "in": "query",
+                        "description": "Search for images by specific artists (free-text, comma-separated list of artists)."
+                    },
+                    {
+                        "name": "collection_codes",
+                        "in": "query",
+                        "description": "Filter by collection codes (comma-separated list). Include or exclude based on collections_filter_type."
+                    },
+                    {
+                        "name": "collections_filter_type",
+                        "in": "query",
+                        "description": "Provides searching based on specified collection(s)."
+                    },
+                    {
+                        "name": "compositions",
+                        "in": "query",
+                        "description": "Filter based on image composition."
+                    },
+                    {
+                        "name": "editorial_segments",
+                        "in": "query",
+                        "description": "Return only events with a matching editorial segment."
+                    },
+                    {
+                        "name": "embed_content_only",
+                        "in": "query",
+                        "description": "Restrict search results to embeddable images. The default is false."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "If specified, select assets downloaded on or before this date. Dates should be submitted in ISO\r\n                8601 format (i.e., YYYY-MM-DD hh:mm:ss.sss). If time is omitted, midnight is assumed. Date\/times are UTC."
+                    },
+                    {
+                        "name": "entity_uris",
+                        "in": "query",
+                        "description": "specify linked data entity uri."
+                    },
+                    {
+                        "name": "ethnicity",
+                        "in": "query",
+                        "description": "Filter search results based on the ethnicity of individuals in an image."
+                    },
+                    {
+                        "name": "event_ids",
+                        "in": "query",
+                        "description": "Filter based on specific events"
+                    },
+                    {
+                        "name": "exclude_nudity",
+                        "in": "query",
+                        "description": "Excludes images containing nudity. The default is false."
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned."
+                    },
+                    {
+                        "name": "file_types",
+                        "in": "query",
+                        "description": "Return only images having a specific file type."
+                    },
+                    {
+                        "name": "graphical_styles",
+                        "in": "query",
+                        "description": "Filter based on graphical style of the image."
+                    },
+                    {
+                        "name": "keyword_ids",
+                        "in": "query",
+                        "description": "Return only images tagged with specific keyword(s). Specify using a comma-separated list of keyword Ids. If keyword Ids and phrase are both specified, only those images matching the query phrase which also contain the requested keyword(s) are returned."
+                    },
+                    {
+                        "name": "minimum_quality_rank",
+                        "in": "query",
+                        "description": "Filter search results based on minimum quality ranking. Possible values 1, 2, 3 with 1 being best."
+                    },
+                    {
+                        "name": "minimum_size",
+                        "in": "query",
+                        "description": "Filter based on minimum size requested."
+                    },
+                    {
+                        "name": "number_of_people",
+                        "in": "query",
+                        "description": "Filter based on the number of people in the image."
+                    },
+                    {
+                        "name": "orientations",
+                        "in": "query",
+                        "description": "Return only images with selected aspect ratios."
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Identifies page to return. Default page is 1."
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "Specifies page size. Default page_size is 10, maximum page_size is 100."
+                    },
+                    {
+                        "name": "phrase",
+                        "in": "query",
+                        "description": "Filters to events related to this phrase"
+                    },
+                    {
+                        "name": "product_types",
+                        "in": "query",
+                        "description": "Filter images to those from one of your product types. \r\n                    Allowed values are easyaccess, editorialsubscription, imagepack, premiumaccess and royaltyfreesubscription. \r\n                    If you have more than one instance of a product, you may also include the ID of the product instance you wish to filter on. \r\n                    For example, some users may have more than one premiumaccess product, so the product_types value would be premiumaccess:1234. \r\n                   "
+                    },
+                    {
+                        "name": "sort_order",
+                        "in": "query",
+                        "description": "Sort the list of boards by last update date or name. Defaults to date_last_updated_descending."
+                    },
+                    {
+                        "name": "specific_people",
+                        "in": "query",
+                        "description": "Return only images associated with specific people (using a comma-delimited list)."
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "If specified, select assets downloaded on or after this date. Dates should be submitted in ISO\r\n                8601 format (i.e., YYYY-MM-DD hh:mm:ss.sss). If time is omitted, midnight is assumed. Date\/times are UTC."
+                    }
+                ]
+            }
+        },
+        "\/v3\/search\/videos": {
+            "get": {
+                "summary": "Search Editorial Videos",
+                "description": "Use this endpoint to search over a blend of our premium stock, contemporary 4K and HD footage, celebrities, news, newsmakers, entertainment, events and archival videos.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key.\r\n\r\n\r\nYou can show different information in the response by specifying values on the \"fields\" parameter (see detail",
+                "operationId": "SearchGetVideosByPhrase",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "age_of_people",
+                        "in": "query",
+                        "description": "Filter based on the age of individuals in an image."
+                    },
+                    {
+                        "name": "collection_codes",
+                        "in": "query",
+                        "description": "Filter by collection codes (comma-separated list). Include or exclude based on collections_filter_type."
+                    },
+                    {
+                        "name": "collections_filter_type",
+                        "in": "query",
+                        "description": "Provides searching based on specified collection(s)."
+                    },
+                    {
+                        "name": "editorial_video_types",
+                        "in": "query",
+                        "description": "Allows filtering by types of video."
+                    },
+                    {
+                        "name": "exclude_nudity",
+                        "in": "query",
+                        "description": "Excludes images containing nudity. The default is false."
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned."
+                    },
+                    {
+                        "name": "format_available",
+                        "in": "query",
+                        "description": "Filters according to the digital video format available on a film asset."
+                    },
+                    {
+                        "name": "frame_rates",
+                        "in": "query",
+                        "description": "Provides filtering by video frame rate (frames\/second)."
+                    },
+                    {
+                        "name": "keyword_ids",
+                        "in": "query",
+                        "description": "Return only images tagged with specific keyword(s). Specify using a comma-separated list of keyword Ids. If keyword Ids and phrase are both specified, only those images matching the query phrase which also contain the requested keyword(s) are returned."
+                    },
+                    {
+                        "name": "license_models",
+                        "in": "query",
+                        "description": "Specifies the image licensing model(s)."
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Identifies page to return. Default page is 1."
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "Specifies page size. Default page_size is 10, maximum page_size is 100."
+                    },
+                    {
+                        "name": "phrase",
+                        "in": "query",
+                        "description": "Filters to events related to this phrase"
+                    },
+                    {
+                        "name": "product_types",
+                        "in": "query",
+                        "description": "Filter images to those from one of your product types. \r\n                    Allowed values are easyaccess, editorialsubscription, imagepack, premiumaccess and royaltyfreesubscription. \r\n                    If you have more than one instance of a product, you may also include the ID of the product instance you wish to filter on. \r\n                    For example, some users may have more than one premiumaccess product, so the product_types value would be premiumaccess:1234. \r\n                   "
+                    },
+                    {
+                        "name": "sort_order",
+                        "in": "query",
+                        "description": "Sort the list of boards by last update date or name. Defaults to date_last_updated_descending."
+                    },
+                    {
+                        "name": "specific_people",
+                        "in": "query",
+                        "description": "Return only images associated with specific people (using a comma-delimited list)."
+                    }
+                ]
+            }
+        },
+        "\/v3\/search\/videos\/creative": {
+            "get": {
+                "summary": "Search for creative videos",
+                "description": "Use this endpoint to search premium stock video, from archival film to contemporary 4K and HD footage.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html)\r\npage for more information on how to sign up for an API key.\r\n\r\nYou can show different information in the response by specifying values on the \"fields\" parameter (see details below).\r\nYou can search with only an API key, and that will give ",
+                "operationId": "SearchGetCreativeVideosByPhrase",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "age_of_people",
+                        "in": "query",
+                        "description": "Filter based on the age of individuals in an image."
+                    },
+                    {
+                        "name": "collection_codes",
+                        "in": "query",
+                        "description": "Filter by collection codes (comma-separated list). Include or exclude based on collections_filter_type."
+                    },
+                    {
+                        "name": "collections_filter_type",
+                        "in": "query",
+                        "description": "Provides searching based on specified collection(s)."
+                    },
+                    {
+                        "name": "exclude_nudity",
+                        "in": "query",
+                        "description": "Excludes images containing nudity. The default is false."
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned."
+                    },
+                    {
+                        "name": "format_available",
+                        "in": "query",
+                        "description": "Filters according to the digital video format available on a film asset."
+                    },
+                    {
+                        "name": "frame_rates",
+                        "in": "query",
+                        "description": "Provides filtering by video frame rate (frames\/second)."
+                    },
+                    {
+                        "name": "keyword_ids",
+                        "in": "query",
+                        "description": "Return only images tagged with specific keyword(s). Specify using a comma-separated list of keyword Ids. If keyword Ids and phrase are both specified, only those images matching the query phrase which also contain the requested keyword(s) are returned."
+                    },
+                    {
+                        "name": "license_models",
+                        "in": "query",
+                        "description": "Specifies the image licensing model(s)."
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Identifies page to return. Default page is 1."
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "Specifies page size. Default page_size is 10, maximum page_size is 100."
+                    },
+                    {
+                        "name": "phrase",
+                        "in": "query",
+                        "description": "Filters to events related to this phrase"
+                    },
+                    {
+                        "name": "product_types",
+                        "in": "query",
+                        "description": "Filter images to those from one of your product types. \r\n                    Allowed values are easyaccess, editorialsubscription, imagepack, premiumaccess and royaltyfreesubscription. \r\n                    If you have more than one instance of a product, you may also include the ID of the product instance you wish to filter on. \r\n                    For example, some users may have more than one premiumaccess product, so the product_types value would be premiumaccess:1234. \r\n                   "
+                    },
+                    {
+                        "name": "sort_order",
+                        "in": "query",
+                        "description": "Sort the list of boards by last update date or name. Defaults to date_last_updated_descending."
+                    }
+                ]
+            }
+        },
+        "\/v3\/search\/videos\/editorial": {
+            "get": {
+                "summary": "Search for editorial videos",
+                "description": "Use this endpoint to search current and archival video clips of celebrities, newsmakers, and events.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key.\r\n\r\nYou can show different information in the response by specifying values on the \"fields\" parameter (see details below).\r\nYou can search with only an API key, and that will give you",
+                "operationId": "SearchGetEditorialVideosByPhrase",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "age_of_people",
+                        "in": "query",
+                        "description": "Filter based on the age of individuals in an image."
+                    },
+                    {
+                        "name": "collection_codes",
+                        "in": "query",
+                        "description": "Filter by collection codes (comma-separated list). Include or exclude based on collections_filter_type."
+                    },
+                    {
+                        "name": "collections_filter_type",
+                        "in": "query",
+                        "description": "Provides searching based on specified collection(s)."
+                    },
+                    {
+                        "name": "editorial_video_types",
+                        "in": "query",
+                        "description": "Allows filtering by types of video."
+                    },
+                    {
+                        "name": "entity_uris",
+                        "in": "query",
+                        "description": "specify linked data entity uri."
+                    },
+                    {
+                        "name": "exclude_nudity",
+                        "in": "query",
+                        "description": "Excludes images containing nudity. The default is false."
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned."
+                    },
+                    {
+                        "name": "format_available",
+                        "in": "query",
+                        "description": "Filters according to the digital video format available on a film asset."
+                    },
+                    {
+                        "name": "frame_rates",
+                        "in": "query",
+                        "description": "Provides filtering by video frame rate (frames\/second)."
+                    },
+                    {
+                        "name": "keyword_ids",
+                        "in": "query",
+                        "description": "Return only images tagged with specific keyword(s). Specify using a comma-separated list of keyword Ids. If keyword Ids and phrase are both specified, only those images matching the query phrase which also contain the requested keyword(s) are returned."
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Identifies page to return. Default page is 1."
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "Specifies page size. Default page_size is 10, maximum page_size is 100."
+                    },
+                    {
+                        "name": "phrase",
+                        "in": "query",
+                        "description": "Filters to events related to this phrase"
+                    },
+                    {
+                        "name": "product_types",
+                        "in": "query",
+                        "description": "Filter images to those from one of your product types. \r\n                    Allowed values are easyaccess, editorialsubscription, imagepack, premiumaccess and royaltyfreesubscription. \r\n                    If you have more than one instance of a product, you may also include the ID of the product instance you wish to filter on. \r\n                    For example, some users may have more than one premiumaccess product, so the product_types value would be premiumaccess:1234. \r\n                   "
+                    },
+                    {
+                        "name": "sort_order",
+                        "in": "query",
+                        "description": "Sort the list of boards by last update date or name. Defaults to date_last_updated_descending."
+                    },
+                    {
+                        "name": "specific_people",
+                        "in": "query",
+                        "description": "Return only images associated with specific people (using a comma-delimited list)."
+                    }
+                ]
+            }
+        },
+        "\/v3\/usage-batches\/{id}": {
+            "put": {
+                "summary": "Reports Usage Batches",
+                "description": "# Report Usage\r\n\r\nUse this endpoint to report the usages of a set of assets. The count of assets submitted in a single batch to this endpoint is limited to 1000. Note that all asset Ids specified must be valid or the operation will fail causing no usages to be recorded. In this case, you will need to remove the invalid asset Ids from the query request and re-submit the query.\r\n\r\n##  Quickstart\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorizati",
+                "operationId": "UsagePut",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "request",
+                        "in": "body",
+                        "description": "Specify JSON containing an array of asset ids to register.  Limited to 500 asset ids per call."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "<remarks>\r\n                    Id of image to download.\r\n                <\/remarks>"
+                    }
+                ]
+            }
+        },
+        "\/v3\/videos": {
+            "get": {
+                "summary": "Get Videos Metadatata",
+                "description": "Use this endpoint to return detailed video metadata for all the specified video ids.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key.\r\n\r\nYou can show different information in the response by specifying values on the \"fields\" parameter (see details below).\r\nYou can search with only an API key, and that will give you search results ",
+                "operationId": "VideosGetBatch",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "ids",
+                        "in": "query",
+                        "description": "A comma separated list of event ids."
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned."
+                    }
+                ]
+            }
+        },
+        "\/v3\/videos\/{id}": {
+            "get": {
+                "summary": "Get Video Metadatata",
+                "description": "Use this endpoint to return detailed video metadata for the specified video id.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key.\r\n\r\nYou can show different information in the response by specifying values on the \"fields\" parameter (see details below).\r\nYou can search with only an API key, and that will give you search results that ",
+                "operationId": "VideosGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "<remarks>\r\n                    Id of image to download.\r\n                <\/remarks>"
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned."
+                    }
+                ]
+            }
+        },
+        "\/v3\/videos\/{id}\/similar": {
+            "get": {
+                "summary": "Get Similar Videos",
+                "description": "Get videos similar to a video by supplying one video id",
+                "operationId": "VideosGetSimilarVideos",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "Provide a header to specify the language of result values."
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Provide access token in the format of 'Bearer {token}'."
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "<remarks>\r\n                    Id of image to download.\r\n                <\/remarks>"
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "Comma separated list of fields. Allows restricting which fields are returned. If no fields are selected, the summary_set of fields are returned."
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Identifies page to return. Default page is 1."
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "Specifies page size. Default page_size is 10, maximum page_size is 100."
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "AddBoardAssetsResult": {
+                "type": "object",
+                "properties": {
+                    "assets_added": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "assets_not_added": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Asset": {
+                "type": "object",
+                "properties": {
+                    "asset_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "date_added": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "display_sizes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "AssetChanges": {
+                "type": "object",
+                "properties": {
+                    "change_set_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "changed_assets": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BoardAsset": {
+                "type": "object",
+                "properties": {
+                    "asset_id": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BoardCommentPermissions": {
+                "type": "object",
+                "properties": {
+                    "can_add_comment": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BoardCreated": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BoardDetail": {
+                "type": "object",
+                "properties": {
+                    "asset_count": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "assets": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "comment_count": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "date_created": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "date_last_updated": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BoardInfo": {
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BoardList": {
+                "type": "object",
+                "properties": {
+                    "board_count": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "boards": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BoardListBoard": {
+                "type": "object",
+                "properties": {
+                    "asset_count": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "board_relationship": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "date_created": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "date_last_updated": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BoardPermissions": {
+                "type": "object",
+                "properties": {
+                    "can_add_assets": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "can_delete_board": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "can_invite_to_board": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "can_remove_assets": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "can_update_description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "can_update_name": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "ChangedAssetDetail": {
+                "type": "object",
+                "properties": {
+                    "asset_changed_utc_datetime": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "asset_lifecycle": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "asset_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Collaborator": {
+                "type": "object",
+                "properties": {
+                    "first_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "last_name": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Comment": {
+                "type": "object",
+                "properties": {
+                    "date_created": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "text": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "CommentCreated": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "CommentPermissions": {
+                "type": "object",
+                "properties": {
+                    "can_delete_comment": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "CommentRequest": {
+                "type": "object",
+                "properties": {
+                    "text": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "CommentsList": {
+                "type": "object",
+                "properties": {
+                    "comments": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "DisplaySize": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.AllowedUse": {
+                "type": "object",
+                "properties": {
+                    "how_can_i_use_it": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "release_info": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "usage_restrictions": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Artists.DisplaySize": {
+                "type": "object",
+                "properties": {
+                    "aspect_ratio": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "is_watermarked": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Artists.ImageSearchItem": {
+                "type": "object",
+                "properties": {
+                    "alternative_ids": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "asset_family": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "asset_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "caption": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "collection_code": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "collection_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "date_submitted": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "display_sizes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "keywords": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "license_model": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Artists.ImageSearchResults": {
+                "type": "object",
+                "properties": {
+                    "images": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "result_count": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Artists.Keyword": {
+                "type": "object",
+                "properties": {
+                    "keyword_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "text": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Artists.VideoSearchItem": {
+                "type": "object",
+                "properties": {
+                    "alternative_ids": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "asset_family": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "asset_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "caption": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "collection_code": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "collection_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "date_submitted": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "display_sizes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "keywords": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "license_model": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Artists.VideoSearchResults": {
+                "type": "object",
+                "properties": {
+                    "result_count": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "videos": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Collections.Collection": {
+                "type": "object",
+                "properties": {
+                    "asset_family": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "code": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "license_model": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "product_types": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Collections.CollectionsList": {
+                "type": "object",
+                "properties": {
+                    "collections": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Countries.CountriesList": {
+                "type": "object",
+                "properties": {
+                    "countries": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Countries.Country": {
+                "type": "object",
+                "properties": {
+                    "iso_alpha_2": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "iso_alpha_3": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.CuratedSets.CuratedSet": {
+                "type": "object",
+                "properties": {
+                    "assets": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "date_created": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "date_last_updated": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "hero_image_uri": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "keywords": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "set_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Customers.CustomerInfoResponse": {
+                "type": "object",
+                "properties": {
+                    "email_address": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "is_active": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "user_name": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Download": {
+                "type": "object",
+                "properties": {
+                    "agreement_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "product_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "product_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Downloads.GetDownloadsResponse": {
+                "type": "object",
+                "properties": {
+                    "downloads": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "result_count": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Downloads.GetDownloadsResponse.Download": {
+                "type": "object",
+                "properties": {
+                    "agreement_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "asset_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "date_downloaded": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "product_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "size_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "thumb_uri": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Downloads.GetDownloadsResponse.DownloadDetails": {
+                "type": "object",
+                "properties": {
+                    "download_notes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "project_code": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Downloads.PremiumAccessDownloadData": {
+                "type": "object",
+                "properties": {
+                    "download_notes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "project_code": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Downloads.User": {
+                "type": "object",
+                "properties": {
+                    "first_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "last_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "middle_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "username": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Events.Event": {
+                "type": "object",
+                "properties": {
+                    "child_event_count": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "editorial_segments": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "image_count": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "start_date": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Events.EventsResult": {
+                "type": "object",
+                "properties": {
+                    "events": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "events_not_found": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.HeroImage": {
+                "type": "object",
+                "properties": {
+                    "display_sizes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.HeroImageDisplaySize": {
+                "type": "object",
+                "properties": {
+                    "is_watermarked": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.IStockLicense": {
+                "type": "object",
+                "properties": {
+                    "credits": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "license_type": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Images.EditorialSource": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Images.ImageDetail": {
+                "type": "object",
+                "properties": {
+                    "alternative_ids": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "artist": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "artist_title": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "asset_family": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "asset_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "call_for_image": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "caption": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "city": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "collection_code": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "collection_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "collection_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "color_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "copyright": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "country": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "credit_line": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "date_camera_shot": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "date_created": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "date_submitted": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "display_sizes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "download_sizes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "editorial_segments": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "event_ids": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "graphical_style": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "istock_licenses": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "keywords": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "largest_downloads": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "license_model": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "links": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "orientation": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "people": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "prestige": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "product_types": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "quality_rank": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "referral_destinations": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "state_province": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "uri_oembed": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Images.ImageDetailDisplaySize": {
+                "type": "object",
+                "properties": {
+                    "height": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "is_watermarked": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "width": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Images.ImageDownloadAuthorization": {
+                "type": "object",
+                "properties": {
+                    "agreement_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "product_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "product_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Images.ImageDownloadSize": {
+                "type": "object",
+                "properties": {
+                    "bytes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "downloads": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "height": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "media_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "width": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Images.ImagesDetail": {
+                "type": "object",
+                "properties": {
+                    "images": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "images_not_found": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Images.Link": {
+                "type": "object",
+                "properties": {
+                    "rel": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Keyword": {
+                "type": "object",
+                "properties": {
+                    "entity_types": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "entity_uris": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "keyword_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "relevance": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "text": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.LocationEvent": {
+                "type": "object",
+                "properties": {
+                    "city": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "country": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "state_province": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "venue": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.MaxDimensions": {
+                "type": "object",
+                "properties": {
+                    "height": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "width": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Products.DownloadRequirements": {
+                "type": "object",
+                "properties": {
+                    "is_note_required": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "is_project_code_required": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "project_codes": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Products.OverageDetails": {
+                "type": "object",
+                "properties": {
+                    "count": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "limit": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "overages_reached": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "remaining": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Products.Product": {
+                "type": "object",
+                "properties": {
+                    "agreement_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "application_website": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "credits_remaining": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "download_limit": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "download_limit_duration": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "download_limit_reset_utc_date": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "downloads_remaining": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "expiration_utc_date": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "imagepack_resolution": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Products.ProductsResult": {
+                "type": "object",
+                "properties": {
+                    "products": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Purchases.PreviousAssetPurchase": {
+                "type": "object",
+                "properties": {
+                    "asset_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "asset_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "date_purchased": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "download_uri": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "file_size_in_bytes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "license_model": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "order_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "size_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "thumb_uri": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Purchases.PreviousAssetPurchases": {
+                "type": "object",
+                "properties": {
+                    "previous_purchases": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "result_count": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Purchases.PreviousPurchase": {
+                "type": "object",
+                "properties": {
+                    "date_purchased": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "image_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "license_model": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "order_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "thumb_uri": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Purchases.PreviousPurchases": {
+                "type": "object",
+                "properties": {
+                    "previous_purchases": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "result_count": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.ReferralDestination": {
+                "type": "object",
+                "properties": {
+                    "site_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Search.CreativeImageSearchLightResults": {
+                "type": "object",
+                "properties": {
+                    "images": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "result_count": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Search.CreativeImageSearchResults": {
+                "type": "object",
+                "properties": {
+                    "images": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "result_count": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Search.CreativeVideoSearchResults": {
+                "type": "object",
+                "properties": {
+                    "result_count": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "videos": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Search.EditorialImageSearchResults": {
+                "type": "object",
+                "properties": {
+                    "images": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "result_count": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Search.EditorialSource": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Search.EditorialVideoSearchResults": {
+                "type": "object",
+                "properties": {
+                    "result_count": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "videos": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Search.EventsSearchResult": {
+                "type": "object",
+                "properties": {
+                    "events": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "result_count": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Search.ImageSearchItem": {
+                "type": "object",
+                "properties": {
+                    "alternative_ids": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "artist": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "asset_family": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "call_for_image": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "caption": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "collection_code": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "collection_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "collection_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "color_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "copyright": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "date_camera_shot": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "date_created": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "display_sizes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "editorial_segments": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "event_ids": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "graphical_style": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "istock_licenses": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "keywords": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "largest_downloads": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "license_model": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "orientation": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "people": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "prestige": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "product_types": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "quality_rank": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "referral_destinations": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "uri_oembed": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Search.ImageSearchItemCreative": {
+                "type": "object",
+                "properties": {
+                    "alternative_ids": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "artist": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "asset_family": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "call_for_image": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "caption": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "collection_code": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "collection_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "collection_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "color_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "copyright": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "date_camera_shot": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "date_created": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "display_sizes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "graphical_style": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "keywords": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "largest_downloads": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "license_model": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "orientation": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "prestige": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "product_types": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "quality_rank": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "referral_destinations": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "uri_oembed": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Search.ImageSearchItemDisplaySize": {
+                "type": "object",
+                "properties": {
+                    "is_watermarked": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Search.ImageSearchItemEditorial": {
+                "type": "object",
+                "properties": {
+                    "alternative_ids": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "artist": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "asset_family": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "call_for_image": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "caption": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "collection_code": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "collection_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "collection_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "color_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "copyright": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "date_camera_shot": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "date_created": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "display_sizes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "editorial_segments": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "event_ids": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "graphical_style": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "keywords": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "largest_downloads": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "license_model": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "orientation": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "people": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "product_types": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "quality_rank": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "referral_destinations": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "uri_oembed": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Search.ImageSearchLightItemCreative": {
+                "type": "object",
+                "properties": {
+                    "display_sizes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Search.SearchResults[GettyImages.Models.Search.ImageSearchItem]": {
+                "type": "object",
+                "properties": {
+                    "images": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "result_count": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Search.VideoSearchItem": {
+                "type": "object",
+                "properties": {
+                    "artist": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "asset_family": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "caption": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "clip_length": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "collection_code": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "collection_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "collection_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "color_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "copyright": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "date_created": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "display_sizes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "era": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "istock_licenses": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "keywords": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "largest_downloads": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "license_model": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "mastered_to": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "originally_shot_on": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "product_types": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "referral_destinations": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "shot_speed": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "source": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Search.VideoSearchItemDisplaySize": {
+                "type": "object",
+                "properties": {
+                    "aspect_ratio": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "is_watermarked": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Search.VideoSearchResults[GettyImages.Models.Artists.VideoSearchItem]": {
+                "type": "object",
+                "properties": {
+                    "result_count": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "videos": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Videos.VideoDetail": {
+                "type": "object",
+                "properties": {
+                    "artist": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "asset_family": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "caption": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "clip_length": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "collection_code": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "collection_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "collection_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "color_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "copyright": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "date_created": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "display_sizes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "download_sizes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "editorial_segments": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "era": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "istock_licenses": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "keywords": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "license_model": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "mastered_to": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "originally_shot_on": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "product_types": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "referral_destinations": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "shot_speed": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "source": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Videos.VideoDetailDisplaySize": {
+                "type": "object",
+                "properties": {
+                    "aspect_ratio": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "is_watermarked": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Videos.VideoDownloadAuthorization": {
+                "type": "object",
+                "properties": {
+                    "agreement_name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "product_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "product_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Videos.VideoDownloadSize": {
+                "type": "object",
+                "properties": {
+                    "bit_depth": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "broadcast_video_standard": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "compression": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "content_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "downloads": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "format": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "frame_rate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "frame_size": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "height": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "interlaced": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "width": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Models.Videos.VideosDetail": {
+                "type": "object",
+                "properties": {
+                    "videos": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "videos_not_found": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GettyImages.Services.Core.SecurityToken": {
+                "type": "object",
+                "properties": {
+                    "ActAsSystemId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AdminId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AuthId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ClientIP": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ClientId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Created": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Expires": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RememberedUser": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RenewalEnds": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SecureOnly": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SystemId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SystemRole": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UserId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "VisitorId": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Links": {
+                "type": "object",
+                "properties": {
+                    "invitation": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "share": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Object": {
+                "type": "object"
+            },
+            "PartnerChannel": {
+                "type": "object",
+                "properties": {
+                    "asset_family": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "channel_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "channel_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "notification_count": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "start_date": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "PartnerChannelList": {
+                "type": "object",
+                "properties": {
+                    "channels": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "RegisterAssetsRequest": {
+                "type": "object",
+                "properties": {
+                    "asset_ids": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "System.Object": {
+                "type": "object"
+            },
+            "asset_usage": {
+                "type": "object",
+                "properties": {
+                    "asset_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "quantity": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "usage_date": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "report_usage_batch_request": {
+                "type": "object",
+                "properties": {
+                    "asset_usages": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "report_usage_batch_response": {
+                "type": "object",
+                "properties": {
+                    "invalid_assets": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "total_asset_usages_processed": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
