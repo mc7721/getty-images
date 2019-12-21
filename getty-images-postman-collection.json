@@ -1,5 +1,5 @@
 {
-    "id": "f186407ea32c34f980f42c004de5494e",
+    "id": "29b84f58ed72e4f3fd32be54d15523c6",
     "name": "Getty Images",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "51bbdbdafb64bc4d3d647ee6f26d4f3f",
+            "id": "ba0a7023a07aacdd1b41c2ccdd080a93",
             "name": "Search Artist Images",
             "url": "httpsapi.gettyimages.com\/\/v3\/artists\/images",
             "description": "Search for images by a photographer",
@@ -72,11 +72,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "9b30e851c13317403df5d1765d57a296",
+            "id": "d95a035bdd29dfd73ff82636466e6d7f",
             "name": "Search Artist ImaVideosges",
             "url": "httpsapi.gettyimages.com\/\/v3\/artists\/videos",
             "description": "Search for videos by a photographer",
@@ -138,11 +138,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "a12ca513d13b4a8f5de9f21438ba4f68",
+            "id": "145c19fe848d9946701b2d1c52c22b5f",
             "name": "Get Asset Change Notifications",
             "url": "httpsapi.gettyimages.com\/\/v3\/asset-changes\/change-sets",
             "description": "# Asset Changes\r\n\r\nGet notifications about new, updated or deleted assets.\r\n\r\n##  Quickstart\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource.\r\nPlease see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key. \r\n\r\n    \r\nPartner channels that have not been checked within the last 120 days will be removed and that",
@@ -183,11 +183,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "3d8990e982dc706cd0d604a6a8179833",
+            "id": "5667419c340ebac2d2d055723de66a99",
             "name": "Get Asset Change Notification",
             "url": "httpsapi.gettyimages.com\/\/v3\/asset-changes\/change-sets\/{change-set-id}",
             "description": "# Delete Asset Changes\r\n\r\nConfirm asset changes acknowledges receipt of asset changes (from the PUT asset changes endpoint).\r\n\r\n##  Quickstart\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource.\r\nPlease see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key. \r\n",
@@ -221,11 +221,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "d39153fb2c1769c26c2d5c3a19b479f1",
+            "id": "420523721f4f14bdce2bd614920f3782",
             "name": "Get Asset Change Channels",
             "url": "httpsapi.gettyimages.com\/\/v3\/asset-changes\/channels",
             "description": "# Get Partner Channels\r\n\r\nRetrieves the channel data for the partner. This data can be used to populate the channel_id parameter in the Put Asset Changes query.\r\n\r\n##  Quickstart\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource.\r\nPlease see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key. \r\n\r\nOnly channels",
@@ -252,11 +252,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "93781ed0f9a365e6f2d9cd3dfd37e8a6",
+            "id": "9eb49b593dc9b51540612a3a1872a79e",
             "name": "Register Assets",
             "url": "httpsapi.gettyimages.com\/\/v3\/asset-registrations",
             "description": "# Register Assets\r\n\r\nRegisters a list of assets that a customer has stored in their system.\r\n\r\n##  Quickstart\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource.\r\nPlease see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key. \r\n\r\n_Note_: In the event of a successful query (response code 200) there will be nothi",
@@ -283,11 +283,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "1468c2e36f28204afafb695987ce690c",
+            "id": "9a8554bbc863016d9f73b54a7c446377",
             "name": "Get All Boards",
             "url": "httpsapi.gettyimages.com\/\/v3\/boards",
             "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq). Use this endpoint to retrieve all Boards available for a user.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more in",
@@ -349,11 +349,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "7264d2b8d86684d86f34a92409a20a9d",
+            "id": "302a4fceb1df167c95c7997c6d9d71c0",
             "name": "Create Board",
             "url": "httpsapi.gettyimages.com\/\/v3\/boards",
             "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq). Use this endpoint to create a Board by a specific id.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information",
@@ -394,11 +394,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "0df90a0e85295ba244f7836b4c238f9b",
+            "id": "91a9bc8e79a533adfc647a6f8448e9d8",
             "name": "Delete Board",
             "url": "httpsapi.gettyimages.com\/\/v3\/boards\/{board_id}",
             "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq). Use this endpoint to delete a Board by a specific id.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information",
@@ -439,11 +439,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "b21af1762f7f4f2d66e3ff15d828d1b8",
+            "id": "c9516be7531d0075bb35a7722ecfa154",
             "name": "Get Board Assets",
             "url": "httpsapi.gettyimages.com\/\/v3\/boards\/{board_id}",
             "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq). Use this endpoint to retrieve a Board by a specific id.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more informati",
@@ -484,11 +484,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "1e749a7da61390a3bcd83733e8189524",
+            "id": "7f702b41084f0aa0e142c6d72b558604",
             "name": "Update Board",
             "url": "httpsapi.gettyimages.com\/\/v3\/boards\/{board_id}",
             "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq). Use this endpoint to update a Board by a specific id.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information",
@@ -536,11 +536,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "51bf16ad81a573982c4268c1c6c0fd98",
+            "id": "ee67fe7ae506b0c26417ed2121c5f819",
             "name": "Remove Assets From Board",
             "url": "httpsapi.gettyimages.com\/\/v3\/boards\/{board_id}\/assets",
             "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq).\r\nUse this endpoint to remove a set of assets from a board.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more inform",
@@ -588,11 +588,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "679ad33debddbf7d8c01116e6d695b07",
+            "id": "68d3187867886390480bebe2fc749df5",
             "name": "Add Assets to a Board",
             "url": "httpsapi.gettyimages.com\/\/v3\/boards\/{board_id}\/assets",
             "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq).\r\nUse this endpoint to add a set of assets to a board.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information",
@@ -640,11 +640,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "5a9e589836ed04985f64bd7e4ffa7f5f",
+            "id": "15a3e602629198e201bcf9fc1b1f003d",
             "name": "Remove an asset from a board",
             "url": "httpsapi.gettyimages.com\/\/v3\/boards\/{board_id}\/assets\/{asset_id}",
             "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq). Use this endpoint to remove an asset from a board.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on",
@@ -692,11 +692,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "f9e76ee3a189f910353a79633d9b7f86",
+            "id": "966d8db388fe088a5e5cfb54c04c6039",
             "name": "Add an asset to a board",
             "url": "httpsapi.gettyimages.com\/\/v3\/boards\/{board_id}\/assets\/{asset_id}",
             "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place.\r\nMore information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq). Use this endpoint to add an asset to a board.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource.\r\nPlease see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on ho",
@@ -744,11 +744,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "64e1ead2a61af1528ffe2bd91e065a31",
+            "id": "26a4bdecbd118460119f4759c81951be",
             "name": "Get comments from a board",
             "url": "httpsapi.gettyimages.com\/\/v3\/boards\/{board_id}\/comments",
             "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq). Use this endpoint to retrieve all comments for a specific board.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more ",
@@ -789,11 +789,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "7ca2664367ebfa8312695d4bb3ab2a6e",
+            "id": "620f9e46464f553ef71dbac7d8db10d9",
             "name": "Add a comment to a board",
             "url": "httpsapi.gettyimages.com\/\/v3\/boards\/{board_id}\/comments",
             "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq).\r\nUse this endpoint to add a comment to a board.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on ho",
@@ -841,11 +841,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "df8aff5b62e088fc4fe5a27cb3bf5e9e",
+            "id": "d94b15ed78b39993c81fb5a197583802",
             "name": "Delete a comment from a board",
             "url": "httpsapi.gettyimages.com\/\/v3\/boards\/{board_id}\/comments\/{comment_id}",
             "description": "Boards are where you collect, curate, collaborate on and manage photo and video assets in one place. More information on the [Boards FAQ](http:\/\/www.gettyimages.com\/boards\/faq).\r\nUse this endpoint to delete a comment from a board.\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorization-faq.html) access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information ",
@@ -893,11 +893,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "db7b6b0ff319e830d54f18ccdc75c4c3",
+            "id": "039649869d8bab4f97c45560d70e062e",
             "name": "Get Collections",
             "url": "httpsapi.gettyimages.com\/\/v3\/collections",
             "description": "Use this endpoint to retrieve collections associated with your Getty Images account. To browse available collections see our [Image collections page]( http:\/\/www.gettyimages.com\/creative-images\/collections).\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key.\r\n",
@@ -931,11 +931,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "4d7bf813c81dd759b22ce200e1b74fa9",
+            "id": "14b2460eefa8ac13548f17ef527434bd",
             "name": "Get Countries",
             "url": "httpsapi.gettyimages.com\/\/v3\/countries",
             "description": "Returns a list of country objects that contains country name, two letter ISO abbreviation and three letter ISO abbreviation.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key.\r\n",
@@ -969,11 +969,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "39190e4898363acbac3916eb6959825b",
+            "id": "61924835264d06d627c7f54ff940fa35",
             "name": "Get Downloads",
             "url": "httpsapi.gettyimages.com\/\/v3\/downloads",
             "description": "Returns information about a customer's previously downloaded assets.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key. \r\n \r\n\t\r\nThis endpoint requires being a Getty Images customer to limit your results to only assets that you have a license to use, \r\nyou need to also include an authorization token in the header of your request. \r\nP",
@@ -1049,11 +1049,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "8511c84844dfccb80bd12f1feb4db2f5",
+            "id": "e263cf070665b521af3cad9c0b784a14",
             "name": "Download an image",
             "url": "httpsapi.gettyimages.com\/\/v3\/downloads\/images\/{id}",
             "description": "Use this endpoint to generate download URLs and related data for images you are authorized to download.\r\n\r\nMost product offerings have enforced periodic download limits such as monthly, weekly, and daily. When this operation executes, the count of allowed downloads is decremented by one for the product offering. Once the download limit is reached for a given product offering, no further downloads may be requested for that product offering until the next download period.\r\n\r\nThe download limit for",
@@ -1136,11 +1136,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "8dec504fce5b7a808bdfc7d37e4e65e5",
+            "id": "09c65cd66db85d0311590881756d50c3",
             "name": "Download a video",
             "url": "httpsapi.gettyimages.com\/\/v3\/downloads\/videos\/{id}",
             "description": "Use this endpoint to generate download URLs and related data for videos you are authorized to download.\r\n\r\nMost product offerings have enforced periodic download limits such as monthly, weekly, and daily. When this operation executes, the count of allowed downloads is decremented by one for the product offering. Once the download limit is reached for a given product offering, no further downloads may be requested for that product offering until the next download period.\r\n\r\nThe download limit for",
@@ -1209,11 +1209,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "c3048b1aaf6865f8d4bfcdaa24648445",
+            "id": "5902e8f557a31dccdfc3335f3dc2e012",
             "name": "Get metadata for multiple events",
             "url": "httpsapi.gettyimages.com\/\/v3\/events",
             "description": "This endpoint returns the detailed event metadata for all specified events. Getty Images news, sports and entertainment photographers and\r\nvideographers cover editorially relevant events occurring around the world.  All images or video clips produced in association with \r\nan event, are assigned the same EventID. EventIDs are part of the meta-data returned in SearchForImages Results. Only content \r\nproduced under a Getty Images brand name (Getty Images News, Getty Images Sports, Getty Images Ente",
@@ -1261,11 +1261,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "08bffcd1b2661f9b32b7ea82a05ff80c",
+            "id": "1285cbd1103666d36cdcfb52830d9fcb",
             "name": "Get metadata for a single event",
             "url": "httpsapi.gettyimages.com\/\/v3\/events\/{id}",
             "description": "This endpoint returns the detailed event metadata for a specified event. Getty Images news, sports and entertainment \r\nphotographers and videographers cover editorially relevant events occurring around the world.  \r\nAll images or video clips produced in association with an event, are assigned the same EventID. \r\nEventIDs are part of the meta-data returned in SearchForImages Results. Only content produced under a Getty Images \r\nbrand name (Getty Images News, Getty Images Sports, Getty Images Ente",
@@ -1313,11 +1313,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "25c72914fd97598e076269218361daaa",
+            "id": "5f3179d3b9320ea606139b3ee87e29fd",
             "name": "Get Images",
             "url": "httpsapi.gettyimages.com\/\/v3\/images",
             "description": "This endpoint returns the detailed image metadata for all specified images. Due to a wide variety of available image resolutions,\r\nthe images are grouped into a handful of size categories for simplicity. \r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) \r\npage for more information on how to sign up for an API key. \r\n\r\n## Working with Fields Sets\r\n\r\nFields sets are used in the **fields** re",
@@ -1365,11 +1365,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "de94b8cea226d14a5a4501cffa78859c",
+            "id": "0afcf18f0ca5e7e7cb3524e30b6da84c",
             "name": "Get Image",
             "url": "httpsapi.gettyimages.com\/\/v3\/images\/{id}",
             "description": "This endpoint returns the detailed image metadata for a specified image. Due to a wide variety of available image resolutions, \r\nthe images are grouped into a handful of size categories for simplicity. \r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) \r\npage for more information on how to sign up for an API key. \r\n \r\n## Working with Fields Sets\r\n\r\nFields sets are used in the **fields** req",
@@ -1417,11 +1417,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "992d5f5ec4bf51491b31dac3648edfc4",
+            "id": "b335ceb64aaf63bdcca1464f8c071fd4",
             "name": "Search Similar Images",
             "url": "httpsapi.gettyimages.com\/\/v3\/images\/{id}\/similar",
             "description": "This endpoint will search our asset database for images similar to the specified asset id. Due to a wide variety of available \r\nimage resolutions, the images are grouped into a handful of size categories for simplicity. \r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) \r\npage for more information on how to sign up for an API key. \r\n\r\n## Working with Fields Sets\r\n\r\nFields sets are used in t",
@@ -1483,11 +1483,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "b0cb5d6e33e2f9ee3652bf13aa20cc91",
+            "id": "b93a614da08c7dcae268db630a2fdc1a",
             "name": "Get Products",
             "url": "httpsapi.gettyimages.com\/\/v3\/products",
             "description": "This endpoint returns all products available to the username used during authentication. As such, this endpoint requires the use of\r\na fully authorized access_token. The product data can then be used as search filters, restricting results to images from a specific product.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html)\r\npage for more information on how to sign up for an API key.\r\n",
@@ -1528,11 +1528,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "1d418033b4c56ac04aa674db8ab79424",
+            "id": "3163c9e6bd2190bd5b86a8ce89571922",
             "name": "Get Purchased Images",
             "url": "httpsapi.gettyimages.com\/\/v3\/purchased-assets",
             "description": "This endpoint returns a list of all assets purchased on gettyimages.com by the username used for authentication. \r\nUse of this endpoint requires configuration changes to your API key. \r\nPlease contact [developersupport@gettyimages.com](mailto:developersupport@gettyimages.com) to learn more.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html)\r\npage for more information on how to sign up for an",
@@ -1594,11 +1594,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "73e4ad01e781716b5b82f2d744b07b2f",
+            "id": "c9b4d2a7bf921ff853c44fa18904ada6",
             "name": "Get Previously Purchased Images",
             "url": "httpsapi.gettyimages.com\/\/v3\/purchased-images",
             "description": "This endpoint returns a list of all images purchased on gettyimages.com by the username used for authentication.\r\nUse of this endpoint requires configuration changes to your API key. Please contact [developersupport@gettyimages.com](mailto:developersupport@gettyimages.com)\r\nto learn more.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html)\r\npage for more information on how to sign up for an A",
@@ -1660,11 +1660,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "455b53191370b9dcb3e2ce7f78229b67",
+            "id": "7d146bd1ed9ac2de618330890d90eff2",
             "name": "Search for events",
             "url": "httpsapi.gettyimages.com\/\/v3\/search\/events",
             "description": "Use this endpoint to search Getty Images news, sports and entertainment events. Getty Images photographers and videographers cover editorially relevant events occurring around the world.  All images or video clips produced in association with an event, are assigned the same EventID. EventIDs are part of the meta-data returned in Search Results. Only content produced under a Getty Images brand name (Getty Images News, Getty Images Sports, Getty Images Entertainment, Film Magic, Wire Image) will b",
@@ -1747,11 +1747,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "b66e9cf4fc565ca1a5771aa024cd91d3",
+            "id": "d62104ab73b762f4263adc9dd1055434",
             "name": "Search Images",
             "url": "httpsapi.gettyimages.com\/\/v3\/search\/images",
             "description": "Use this endpoint to search over a blend of our contemporary stock photos, illustrations, archival images, editorial photos, illustrations and archival images. ",
@@ -1960,11 +1960,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "085c99a14d69780b35ab68962ff64475",
+            "id": "7dfc7254003de760168fb43412b23841",
             "name": "Search for creative images only",
             "url": "httpsapi.gettyimages.com\/\/v3\/search\/images\/creative",
             "description": "Use this endpoint to search our contemporary stock photos, illustrations and archival images.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) \r\npage for more information on how to sign up for an API key. \r\n \r\nYou can show different information in the response by specifying values on the \"fields\" parameter (see details below).\r\nYou can search with only an API key, and that will give you se",
@@ -2159,11 +2159,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "9bbaf5fcf8a7351250357c74bf0f7ccb",
+            "id": "b10067d92dfbc78c050356a5126024c4",
             "name": "Search Images by Image",
             "url": "httpsapi.gettyimages.com\/\/v3\/search\/images\/creative\/by-image",
             "description": "Allows searching for similar creative images by passing the URL to an existing image.\r\n\r\nBefore calling the search by image endpoint, an image must be uploaded to a specific AWS S3 bucket. The bucket name is `search-by-image.s3.amazonaws.com`.\r\nFor example, using cURL:\r\n```sh\r\ncurl -i -X PUT https:\/\/search-by-image.s3.amazonaws.com\/my-test-image.jpg -H \"Content-Type: image\/jpeg\" --data-binary \"@testimage.jpg\"\r\n```\r\n\r\nUploads can be overwritten if the names are the same, so using a prefix like th",
@@ -2239,11 +2239,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "56844860133a0fc0aed2b91dd485f86e",
+            "id": "f259f69fe01d409c5fc208b5cbd86fc2",
             "name": "Search Editorial Images",
             "url": "httpsapi.gettyimages.com\/\/v3\/search\/images\/editorial",
             "description": "Use this endpoint to search our editorial stock photos, illustrations and archival images.  Editorial images represent newsworthy events or illustrate matters of general interest, such as news, sport and entertainment and are generally intended for editorial use.",
@@ -2466,11 +2466,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "868a1c05f4c2254099f4aba66d2b3c9a",
+            "id": "be3dc66ea038e1c6e3b3eddfddb1689f",
             "name": "Search Editorial Videos",
             "url": "httpsapi.gettyimages.com\/\/v3\/search\/videos",
             "description": "Use this endpoint to search over a blend of our premium stock, contemporary 4K and HD footage, celebrities, news, newsmakers, entertainment, events and archival videos.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key.\r\n\r\n\r\nYou can show different information in the response by specifying values on the \"fields\" parameter (see detail",
@@ -2616,11 +2616,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "32d60f4ce12340e7b58c4c59e72bc4b8",
+            "id": "85f7597cb4d172ff51d161358bc0593d",
             "name": "Search for creative videos",
             "url": "httpsapi.gettyimages.com\/\/v3\/search\/videos\/creative",
             "description": "Use this endpoint to search premium stock video, from archival film to contemporary 4K and HD footage.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html)\r\npage for more information on how to sign up for an API key.\r\n\r\nYou can show different information in the response by specifying values on the \"fields\" parameter (see details below).\r\nYou can search with only an API key, and that will give ",
@@ -2752,11 +2752,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "5bd0221c2f804d86ea1eddec0e4967d2",
+            "id": "cb022131ba6ed085c24eb17ba6cf2690",
             "name": "Search for editorial videos",
             "url": "httpsapi.gettyimages.com\/\/v3\/search\/videos\/editorial",
             "description": "Use this endpoint to search current and archival video clips of celebrities, newsmakers, and events.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key.\r\n\r\nYou can show different information in the response by specifying values on the \"fields\" parameter (see details below).\r\nYou can search with only an API key, and that will give you",
@@ -2902,11 +2902,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "5f15725e70af5611ea03d9150e147413",
+            "id": "6df480589beea1a6e5dc95c793ecc4a3",
             "name": "Reports Usage Batches",
             "url": "httpsapi.gettyimages.com\/\/v3\/usage-batches\/{id}",
             "description": "# Report Usage\r\n\r\nUse this endpoint to report the usages of a set of assets. The count of assets submitted in a single batch to this endpoint is limited to 1000. Note that all asset Ids specified must be valid or the operation will fail causing no usages to be recorded. In this case, you will need to remove the invalid asset Ids from the query request and re-submit the query.\r\n\r\n##  Quickstart\r\n\r\nYou'll need an API key and a [Resource Owner Grant](http:\/\/developers.gettyimages.com\/en\/authorizati",
@@ -2947,11 +2947,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "eacfdfc7108b08b25a9fff1e68af137a",
+            "id": "291f90f9c5649917a28fb65742568284",
             "name": "Get Videos Metadatata",
             "url": "httpsapi.gettyimages.com\/\/v3\/videos",
             "description": "Use this endpoint to return detailed video metadata for all the specified video ids.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key.\r\n\r\nYou can show different information in the response by specifying values on the \"fields\" parameter (see details below).\r\nYou can search with only an API key, and that will give you search results ",
@@ -2999,11 +2999,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "07427efb09d29eff53edb24d0852dbed",
+            "id": "8eee9d1d8af4577258dbd4ce4c42ccd8",
             "name": "Get Video Metadatata",
             "url": "httpsapi.gettyimages.com\/\/v3\/videos\/{id}",
             "description": "Use this endpoint to return detailed video metadata for the specified video id.\r\n\r\nYou'll need an API key and access token to use this resource. Please see our [Getting Started](http:\/\/developers.gettyimages.com\/en\/getting-started.html) page for more information on how to sign up for an API key.\r\n\r\nYou can show different information in the response by specifying values on the \"fields\" parameter (see details below).\r\nYou can search with only an API key, and that will give you search results that ",
@@ -3051,11 +3051,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         },
         {
-            "id": "f4f7a8902182fb2494a37e2611828435",
+            "id": "d112d781e01fed0c582b69f887ca58c8",
             "name": "Get Similar Videos",
             "url": "httpsapi.gettyimages.com\/\/v3\/videos\/{id}\/similar",
             "description": "Get videos similar to a video by supplying one video id",
@@ -3117,7 +3117,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f186407ea32c34f980f42c004de5494e",
+            "collectionId": "29b84f58ed72e4f3fd32be54d15523c6",
             "rawModeData": ""
         }
     ]
